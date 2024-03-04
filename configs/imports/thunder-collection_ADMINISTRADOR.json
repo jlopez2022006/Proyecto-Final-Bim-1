@@ -1,0 +1,36 @@
+{
+    "client": "Thunder Client",
+    "collectionName": "ADMINISTRADOR",
+    "dateExported": "2024-03-04T17:56:18.904Z",
+    "version": "1.1",
+    "folders": [
+        {
+            "_id": "bbc6db9d-baf1-48b6-a4e7-1b86514ac255",
+            "name": "GestionUsuarios",
+            "containerId": "",
+            "created": "2024-03-04T17:30:30.538Z",
+            "sortNum": 10000
+        }
+    ],
+    "requests": [
+        {
+            "_id": "3ccb9b16-deb6-47e4-9cd2-da56e02f0f00",
+            "colId": "29854aad-bd51-429c-9719-95c5082e06b9",
+            "containerId": "bbc6db9d-baf1-48b6-a4e7-1b86514ac255",
+            "name": "ModificarUsuario",
+            "url": "localhost:3000/SalesManagement/v1/users/",
+            "method": "PUT",
+            "sortNum": 20000,
+            "created": "2024-03-04T17:31:37.284Z",
+            "modified": "2024-03-04T17:32:04.609Z",
+            "headers": [],
+            "params": [],
+            "body": {
+                "type": "json",
+                "raw": "{\n  \"nombre\": \"Jeshua Lopez\",\n  \"correo\": \"jlopez@gmail.com\",\n  \"password\": \"123456\"\n}",
+                "form": []
+            },
+            "tests": []
+        }
+    ]
+}

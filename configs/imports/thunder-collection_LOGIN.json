@@ -1,0 +1,28 @@
+{
+    "client": "Thunder Client",
+    "collectionName": "LOGIN",
+    "dateExported": "2024-03-04T17:56:08.936Z",
+    "version": "1.1",
+    "folders": [],
+    "requests": [
+        {
+            "_id": "63e96e0a-ecf6-4b57-95ce-bc590d452314",
+            "colId": "0fb93cc3-8e61-484a-8f0c-3c9d3a985f01",
+            "containerId": "",
+            "name": "Registrar",
+            "url": "localhost:3000/SalesManagement/v1/users",
+            "method": "POST",
+            "sortNum": 10000,
+            "created": "2024-03-04T17:53:09.078Z",
+            "modified": "2024-03-04T17:53:09.078Z",
+            "headers": [],
+            "params": [],
+            "body": {
+                "type": "json",
+                "raw": "{\n  \"nombre\": \"Jeshua Lopez\",\n  \"correo\": \"jlopez@gmail.com\",\n  \"password\": \"123456\"\n}",
+                "form": []
+            },
+            "tests": []
+        }
+    ]
+}
