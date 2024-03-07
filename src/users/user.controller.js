@@ -29,7 +29,41 @@ export const usuariosPost = async (req, res) => {
 
 }
 
+export const usuariosPost2 = async (req, res) => {
+    const { nombre, correo, password } = req.body;
+    const rol = 'CLIENT_ROLE';
+    const usuario = new Usuario({ nombre, correo, password, rol });
+    const salt = bcryptjs.genSaltSync();
+    usuario.password = bcryptjs.hashSync(password, salt);
+
+    await usuario.save();
+
+    res.json({
+        msg: 'Usuario registrado exitosamente!',
+        usuario
+    });
+};
+
 export const usuariosPut = async (req, res = response) => {
+    const { id } = req.params;
+    const { _id, estado, password, oldPassword, correo, ...resto } = req.body;
+
+    try {
+        await Usuario.findByIdAndUpdate(id, resto);
+        const usuarioActualizado = await Usuario.findOne({ _id: id });
+        res.status(200).json({
+            msg: 'Usuario actualizado',
+            usuario: usuarioActualizado,
+        });
+    } catch (error) {
+        console.error(error);
+        res.status(500).json({
+            msg: 'Error al actualizar el usuario',
+        });
+    }
+};
+
+/*export const usuariosPut2 = async (req, res = response) => {
     const { id } = req.params;
     const { _id, estado, password, oldPassword, correo, ...resto } = req.body;
 
@@ -57,7 +91,7 @@ export const usuariosPut = async (req, res = response) => {
             msg: 'Error al actualizar el usuario',
         });
     }
-};
+};*/
 
 
 export const usuariosDelete = async (req = request, res = response) => {

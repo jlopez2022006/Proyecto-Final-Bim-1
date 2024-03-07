@@ -1,8 +1,101 @@
 {
     "client": "Thunder Client",
     "collectionName": "CLIENTE",
-    "dateExported": "2024-03-04T17:56:23.488Z",
+    "dateExported": "2024-03-07T03:54:52.325Z",
     "version": "1.1",
-    "folders": [],
-    "requests": []
+    "folders": [
+        {
+            "_id": "4b6835e5-d636-4754-8259-9f38455bc082",
+            "name": "Login",
+            "containerId": "",
+            "created": "2024-03-06T01:44:52.325Z",
+            "sortNum": 10000
+        },
+        {
+            "_id": "56d2b48a-afd2-444c-beac-454f5af7f1c3",
+            "name": "Perfil",
+            "containerId": "",
+            "created": "2024-03-06T02:02:39.360Z",
+            "sortNum": 20000
+        },
+        {
+            "_id": "9b481b3f-e591-4b7f-b4e0-63e89dc09150",
+            "name": "Productos",
+            "containerId": "",
+            "created": "2024-03-06T02:14:25.751Z",
+            "sortNum": 30000
+        }
+    ],
+    "requests": [
+        {
+            "_id": "b5ebf48b-b6bf-4bf6-a1b9-3ce15e158c57",
+            "colId": "d5d17af9-1342-4d0b-8c3c-6f86df071870",
+            "containerId": "4b6835e5-d636-4754-8259-9f38455bc082",
+            "name": "RegistrarCliente Copy",
+            "url": "localhost:3000/SalesManagement/v1/users/agregarCliente",
+            "method": "POST",
+            "sortNum": 5000,
+            "created": "2024-03-07T03:21:32.512Z",
+            "modified": "2024-03-07T03:28:51.611Z",
+            "headers": [],
+            "params": [],
+            "body": {
+                "type": "json",
+                "raw": "{\n  \"nombre\": \"Jeshua Lopez\",\n  \"correo\": \"aailopez@gmail.com\",\n  \"password\": \"123456\"\n}",
+                "form": []
+            },
+            "reqType": "post",
+            "tests": []
+        },
+        {
+            "_id": "faa24652-518c-44fc-a63d-1389ca5df7a7",
+            "colId": "d5d17af9-1342-4d0b-8c3c-6f86df071870",
+            "containerId": "4b6835e5-d636-4754-8259-9f38455bc082",
+            "name": "Login",
+            "url": "localhost:3000/SalesManagement/v1/auth/login",
+            "method": "POST",
+            "sortNum": 10000,
+            "created": "2024-03-06T01:52:48.521Z",
+            "modified": "2024-03-07T03:51:51.305Z",
+            "headers": [],
+            "params": [],
+            "body": {
+                "type": "json",
+                "raw": "{\n  \"correo\": \"qilopez@gmail.com\",\n  \"password\": \"123456\"\n}",
+                "form": []
+            },
+            "reqType": "post",
+            "tests": []
+        },
+        {
+            "_id": "a3196f9a-fbfc-4d67-9ef5-0662084e4fef",
+            "colId": "d5d17af9-1342-4d0b-8c3c-6f86df071870",
+            "containerId": "56d2b48a-afd2-444c-beac-454f5af7f1c3",
+            "name": "EditarPerfil",
+            "url": "",
+            "method": "PUT",
+            "sortNum": 20000,
+            "created": "2024-03-06T02:02:54.687Z",
+            "modified": "2024-03-06T02:03:15.691Z",
+            "headers": [],
+            "params": [],
+            "reqType": "get",
+            "tests": []
+        },
+        {
+            "_id": "6527e935-ec38-4891-a488-a1bbc319748a",
+            "colId": "d5d17af9-1342-4d0b-8c3c-6f86df071870",
+            "containerId": "56d2b48a-afd2-444c-beac-454f5af7f1c3",
+            "name": "EliminarCuenta",
+            "url": "",
+            "method": "DELETE",
+            "sortNum": 30000,
+            "created": "2024-03-06T02:03:08.367Z",
+            "modified": "2024-03-06T02:03:19.002Z",
+            "headers": [],
+            "params": [],
+            "reqType": "get",
+            "tests": []
+        }
+    ]
 }

@@ -17,7 +17,7 @@
         rol: {
             type: String,
             required: true,
-            default: 'CLIENTE_ROLE'
+            enum: ['ADMIN_ROLE', 'CLIENT_ROLE']
         },
         estado: {
             type: Boolean,

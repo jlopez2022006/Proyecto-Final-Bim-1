@@ -5,6 +5,7 @@ import {
     usuariosPost,
     usuariosPut,
     usuariosDelete,
+    usuariosPost2,
 } from "./user.controller.js";
 
 import {
@@ -27,9 +28,22 @@ router.post(
         check("password", 'The password must be more than 6 characters.').isLength({ min: 6 }),
         check("correo", "This is not a valid email").isEmail(),
         check("correo").custom(existenteEmail),
+        check('rol'),
         validarCampos,
     ],
     usuariosPost
+);
+
+router.post(
+    "/agregarCliente",
+    [
+        check("nombre", 'The name is required').not().isEmpty(),
+        check("password", 'The password must be more than 6 characters.').isLength({ min: 6 }),
+        check("correo", "This is not a valid email").isEmail(),
+        check("correo").custom(existenteEmail),
+        validarCampos,
+    ],
+    usuariosPost2
 );
 
 router.put(
@@ -37,7 +51,7 @@ router.put(
     [
         check("id", "It is not a valid ID").isMongoId(),
         check("id").custom(existeUsuarioById),
-        check("rol").custom(esRoleValido),
+        check("rol"),
         validarCampos
     ],
     usuariosPut
