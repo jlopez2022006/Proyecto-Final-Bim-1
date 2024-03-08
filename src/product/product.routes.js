@@ -3,7 +3,7 @@ import { check } from "express-validator";
 
 
 import { validarCampos } from "../middlewares/validar-campos.js";
-import { getProductoById, productosAgotadosGet, productosDelete, productosGet, productosPost, productosPut } from "../product/product.controller.js";
+import { buscarProductoPorNombre, getProductoById, productosAgotadosGet, productosDelete, productosGet, productosPost, productosPut } from "../product/product.controller.js";
 import { validarJWT } from "../middlewares/validar-jwt.js"
 import { tieneRole } from "../middlewares/validar-roles.js";
 import { existeProductoById } from "../helpers/db-validators.js";
@@ -14,6 +14,8 @@ const router = Router();
 router.get('/', productosGet);
 
 router.get('/agotados', productosAgotadosGet);
+
+router.post('/buscar', buscarProductoPorNombre);
 
 
 router.get(

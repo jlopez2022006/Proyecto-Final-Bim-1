@@ -31,6 +31,29 @@ export const productosAgotadosGet = async (req, res) => {
     }
 };
 
+export const buscarProductoPorNombre = async (req, res) => {
+    try {
+        const { NombreProducto } = req.body;
+
+        // Verificar si se proporciona el nombre del producto en el cuerpo
+        if (!NombreProducto) {
+            return res.status(400).json({ msg: 'Por favor, proporciona el nombre del producto en el cuerpo de la solicitud.' });
+        }
+
+        // Buscar el producto por nombre
+        const productoEncontrado = await Producto.findOne({ NombreProducto, estado: true }).populate('Categoria', 'NombreCategoria');
+
+        if (!productoEncontrado) {
+            return res.status(404).json({ msg: 'Producto no encontrado.' });
+        }
+
+        res.status(200).json(productoEncontrado);
+    } catch (error) {
+        console.error(error);
+        res.status(500).json({ msg: 'Error al buscar el producto.' });
+    }
+};
+
 
 export const getProductoById = async (req, res) => {
     const { id } = req.params;

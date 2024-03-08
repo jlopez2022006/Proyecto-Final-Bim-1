@@ -1,97 +1,131 @@
 {
     "client": "Thunder Client",
     "collectionName": "CLIENTE",
-    "dateExported": "2024-03-08T06:02:33.656Z",
+    "dateExported": "2024-03-08T06:31:18.381Z",
     "version": "1.1",
     "folders": [
         {
-            "_id": "46f954d2-713a-4681-a0c9-6b0e86badff1",
+            "_id": "b80edf93-0d3f-4263-ab84-fa73987625fd",
             "name": "Login",
             "containerId": "",
-            "created": "2024-03-08T02:04:47.079Z",
+            "created": "2024-03-08T06:08:44.583Z",
             "sortNum": 10000
         },
         {
-            "_id": "cf04a2cc-0ce9-4c73-9e70-b55d1def8b67",
+            "_id": "b525339a-f8a8-40f1-b398-23702db39af6",
             "name": "Perfil",
             "containerId": "",
-            "created": "2024-03-08T02:04:47.080Z",
+            "created": "2024-03-08T06:08:44.584Z",
             "sortNum": 20000
         },
         {
-            "_id": "2660d93b-1366-433a-97cc-a901f09e0a88",
+            "_id": "f629c874-e8af-455f-9790-587efe618c9c",
             "name": "Productos",
             "containerId": "",
-            "created": "2024-03-08T02:04:47.081Z",
+            "created": "2024-03-08T06:08:44.585Z",
             "sortNum": 30000
         }
     ],
     "requests": [
         {
-            "_id": "ec1d6b12-1b90-411e-a226-ea0bb042799c",
-            "colId": "485ef5ce-fe7c-4c4f-90e5-d03914d338c3",
-            "containerId": "46f954d2-713a-4681-a0c9-6b0e86badff1",
+            "_id": "b656d488-37f3-46ba-a5a6-b8369792d5cf",
+            "colId": "4b885a4f-cbf6-4b8e-8302-004547e3ce26",
+            "containerId": "b80edf93-0d3f-4263-ab84-fa73987625fd",
             "name": "RegistrarCliente Copy",
             "url": "localhost:3000/SalesManagement/v1/users/agregarCliente",
             "method": "POST",
             "sortNum": 5000,
-            "created": "2024-03-08T02:04:47.082Z",
-            "modified": "2024-03-08T02:04:47.082Z",
+            "created": "2024-03-08T06:08:44.587Z",
+            "modified": "2024-03-08T06:09:21.213Z",
             "headers": [],
             "params": [],
             "body": {
                 "type": "json",
-                "raw": "{\n  \"nombre\": \"Jeshua Lopez\",\n  \"correo\": \"aailopez@gmail.com\",\n  \"password\": \"123456\"\n}",
-                "form": []
-            },
-            "tests": []
-        },
-        {
-            "_id": "e7ce1ee6-e84c-499f-ba9d-89eae7bc8adb",
-            "colId": "485ef5ce-fe7c-4c4f-90e5-d03914d338c3",
-            "containerId": "46f954d2-713a-4681-a0c9-6b0e86badff1",
-            "name": "Login",
-            "url": "localhost:3000/SalesManagement/v1/auth/login",
-            "method": "POST",
-            "sortNum": 10000,
-            "created": "2024-03-08T02:04:47.079Z",
-            "modified": "2024-03-08T03:52:45.114Z",
-            "headers": [],
-            "params": [],
-            "body": {
-                "type": "json",
-                "raw": "{\n  \"correo\": \"jlopez@gmail.com\",\n  \"password\": \"123456\"\n}",
+                "raw": "{\n  \"nombre\": \"Pedro Lopez\",\n  \"correo\": \"plopez@gmail.com\",\n  \"password\": \"123456\"\n}",
                 "form": []
             },
             "reqType": "post",
             "tests": []
         },
         {
-            "_id": "60f17961-8758-48d1-b218-5e7dc69db251",
-            "colId": "485ef5ce-fe7c-4c4f-90e5-d03914d338c3",
-            "containerId": "cf04a2cc-0ce9-4c73-9e70-b55d1def8b67",
-            "name": "EditarPerfil",
-            "url": "",
-            "method": "PUT",
-            "sortNum": 20000,
-            "created": "2024-03-08T02:04:47.080Z",
-            "modified": "2024-03-08T02:04:47.080Z",
+            "_id": "cda88833-ff6a-4ad1-8f6d-b0a320a18bf1",
+            "colId": "4b885a4f-cbf6-4b8e-8302-004547e3ce26",
+            "containerId": "b80edf93-0d3f-4263-ab84-fa73987625fd",
+            "name": "Login",
+            "url": "localhost:3000/SalesManagement/v1/auth/login",
+            "method": "POST",
+            "sortNum": 10000,
+            "created": "2024-03-08T06:08:44.584Z",
+            "modified": "2024-03-08T06:09:47.731Z",
+            "headers": [],
+            "params": [],
+            "body": {
+                "type": "json",
+                "raw": "{\n  \"correo\": \"ilopez@gmail.com\",\n  \"password\": \"123456\"\n}",
+                "form": []
+            },
+            "reqType": "post",
+            "tests": []
+        },
+        {
+            "_id": "8bb5399d-d2f9-454a-b29b-95189fc8c2c7",
+            "colId": "4b885a4f-cbf6-4b8e-8302-004547e3ce26",
+            "containerId": "f629c874-e8af-455f-9790-587efe618c9c",
+            "name": "VerCategorias Copy",
+            "url": "localhost:3000/SalesManagement/v1/category/",
+            "method": "GET",
+            "sortNum": 10000,
+            "created": "2024-03-08T06:20:03.655Z",
+            "modified": "2024-03-08T06:20:03.655Z",
             "headers": [],
             "params": [],
             "tests": []
         },
         {
-            "_id": "7b5cc0ac-6306-4bea-94b6-ebf4e35aa176",
-            "colId": "485ef5ce-fe7c-4c4f-90e5-d03914d338c3",
-            "containerId": "cf04a2cc-0ce9-4c73-9e70-b55d1def8b67",
+            "_id": "74e18f17-012f-4f44-9e19-fb666ca17996",
+            "colId": "4b885a4f-cbf6-4b8e-8302-004547e3ce26",
+            "containerId": "b525339a-f8a8-40f1-b398-23702db39af6",
+            "name": "EditarPerfil",
+            "url": "",
+            "method": "PUT",
+            "sortNum": 20000,
+            "created": "2024-03-08T06:08:44.585Z",
+            "modified": "2024-03-08T06:08:44.585Z",
+            "headers": [],
+            "params": [],
+            "tests": []
+        },
+        {
+            "_id": "d68aaec5-6834-49b9-ac1d-082df646c54e",
+            "colId": "4b885a4f-cbf6-4b8e-8302-004547e3ce26",
+            "containerId": "b525339a-f8a8-40f1-b398-23702db39af6",
             "name": "EliminarCuenta",
             "url": "",
             "method": "DELETE",
             "sortNum": 30000,
-            "created": "2024-03-08T02:04:47.081Z",
-            "modified": "2024-03-08T02:04:47.081Z",
+            "created": "2024-03-08T06:08:44.586Z",
+            "modified": "2024-03-08T06:08:44.586Z",
             "headers": [],
             "params": [],
+            "tests": []
+        },
+        {
+            "_id": "fb3ecc58-d5ab-40e8-b2cc-8df90ed0ed15",
+            "colId": "4b885a4f-cbf6-4b8e-8302-004547e3ce26",
+            "containerId": "f629c874-e8af-455f-9790-587efe618c9c",
+            "name": "BuscarProducto",
+            "url": "localhost:3000/SalesManagement/v1/product/buscar",
+            "method": "POST",
+            "sortNum": 40000,
+            "created": "2024-03-08T06:25:41.167Z",
+            "modified": "2024-03-08T06:26:25.812Z",
+            "headers": [],
+            "params": [],
+            "body": {
+                "type": "json",
+                "raw": "{\n    \"NombreProducto\": \"Control de PS4\"\n}",
+                "form": []
+            },
             "tests": []
         }
     ]
