@@ -1,35 +1,35 @@
 {
     "client": "Thunder Client",
     "collectionName": "ADMINISTRADOR",
-    "dateExported": "2024-03-07T03:54:38.387Z",
+    "dateExported": "2024-03-08T04:07:15.035Z",
     "version": "1.1",
     "folders": [
         {
-            "_id": "6461758c-3cdc-49bc-8948-2024606cb509",
+            "_id": "3977f3e3-402d-4cb3-902b-d5cbd2a9f141",
             "name": "GestionUsuarios",
             "containerId": "",
-            "created": "2024-03-06T01:07:09.337Z",
+            "created": "2024-03-08T02:04:47.052Z",
             "sortNum": 10000
         },
         {
-            "_id": "157245d4-bbde-4e21-90d1-cea5aaf9939d",
+            "_id": "1c06d198-40ae-4866-ad37-6a07e7e5b5de",
             "name": "GestionCategoria",
             "containerId": "",
-            "created": "2024-03-07T01:30:00.760Z",
+            "created": "2024-03-08T02:04:47.053Z",
             "sortNum": 20000
         }
     ],
     "requests": [
         {
-            "_id": "cfb7ef9a-444d-4488-8634-96af225217be",
-            "colId": "43d50307-688a-4e12-a11c-e98a9b9465aa",
-            "containerId": "6461758c-3cdc-49bc-8948-2024606cb509",
+            "_id": "005d0788-daaf-4ac5-b7bf-bb23a582a842",
+            "colId": "2ac4e0d3-2367-45a8-898b-417480716c1b",
+            "containerId": "3977f3e3-402d-4cb3-902b-d5cbd2a9f141",
             "name": "AgregarUsuario",
             "url": "localhost:3000/SalesManagement/v1/users",
             "method": "POST",
             "sortNum": 5000,
-            "created": "2024-03-07T03:21:21.118Z",
-            "modified": "2024-03-07T03:21:21.118Z",
+            "created": "2024-03-08T02:04:47.059Z",
+            "modified": "2024-03-08T02:04:47.059Z",
             "headers": [],
             "params": [],
             "body": {
@@ -37,33 +37,32 @@
                 "raw": "{\n  \"nombre\": \"Jeshua Lopez\",\n  \"correo\": \"ilopez@gmail.com\",\n  \"password\": \"123456\",\n  \"rol\": \"CLIENT_ROLE\"\n}",
                 "form": []
             },
-            "reqType": "post",
             "tests": []
         },
         {
-            "_id": "85838cd1-7790-4d7f-95d0-e66cd92d96ff",
-            "colId": "43d50307-688a-4e12-a11c-e98a9b9465aa",
-            "containerId": "6461758c-3cdc-49bc-8948-2024606cb509",
+            "_id": "55d1cc53-b75e-4c5c-88b3-a443921bde60",
+            "colId": "2ac4e0d3-2367-45a8-898b-417480716c1b",
+            "containerId": "3977f3e3-402d-4cb3-902b-d5cbd2a9f141",
             "name": "VerUsuarios",
             "url": "localhost:3000/SalesManagement/v1/users/",
             "method": "GET",
             "sortNum": 10000,
-            "created": "2024-03-07T03:36:12.249Z",
-            "modified": "2024-03-07T03:36:25.896Z",
+            "created": "2024-03-08T02:04:47.060Z",
+            "modified": "2024-03-08T02:04:47.060Z",
             "headers": [],
             "params": [],
             "tests": []
         },
         {
-            "_id": "5f0466ca-b131-4a02-bb0d-9c7a8ea13380",
-            "colId": "43d50307-688a-4e12-a11c-e98a9b9465aa",
-            "containerId": "6461758c-3cdc-49bc-8948-2024606cb509",
+            "_id": "97188b92-1f82-4d50-8fa5-e57ef5e45b5a",
+            "colId": "2ac4e0d3-2367-45a8-898b-417480716c1b",
+            "containerId": "3977f3e3-402d-4cb3-902b-d5cbd2a9f141",
             "name": "ModificarUsuario",
             "url": "localhost:3000/SalesManagement/v1/users/65e9365e6fd38b3ebfbd1988",
             "method": "PUT",
             "sortNum": 20000,
-            "created": "2024-03-06T01:07:09.337Z",
-            "modified": "2024-03-07T03:42:41.176Z",
+            "created": "2024-03-08T02:04:47.053Z",
+            "modified": "2024-03-08T02:04:47.053Z",
             "headers": [],
             "params": [],
             "body": {
@@ -71,19 +70,18 @@
                 "raw": "{\n  \"nombre\": \"Pedro Lopez\",\n  \"correo\": \"plopez@gmail.com\",\n  \"password\": \"123456\",\n  \"rol\": \"ADMIN_ROLE\"\n}",
                 "form": []
             },
-            "reqType": "put",
             "tests": []
         },
         {
-            "_id": "52b865c9-4bce-4649-9a04-15536c3289e2",
-            "colId": "43d50307-688a-4e12-a11c-e98a9b9465aa",
-            "containerId": "6461758c-3cdc-49bc-8948-2024606cb509",
+            "_id": "c0185b35-badb-4d01-8fec-4a7e36ea5913",
+            "colId": "2ac4e0d3-2367-45a8-898b-417480716c1b",
+            "containerId": "3977f3e3-402d-4cb3-902b-d5cbd2a9f141",
             "name": "EliminarUsuarios",
             "url": "localhost:3000/SalesManagement/v1/users/65e9365e6fd38b3ebfbd1988",
             "method": "DELETE",
             "sortNum": 40000,
-            "created": "2024-03-06T02:10:41.282Z",
-            "modified": "2024-03-07T03:53:18.836Z",
+            "created": "2024-03-08T02:04:47.054Z",
+            "modified": "2024-03-08T02:04:47.054Z",
             "headers": [
                 {
                     "name": "x-token",
@@ -91,72 +89,85 @@
                 }
             ],
             "params": [],
-            "reqType": "del",
             "tests": []
         },
         {
-            "_id": "4f3f45da-6fcf-4263-908b-b7a07cb9376e",
-            "colId": "43d50307-688a-4e12-a11c-e98a9b9465aa",
-            "containerId": "157245d4-bbde-4e21-90d1-cea5aaf9939d",
+            "_id": "345c9c12-db8d-4eb5-9e3c-3cff291d411d",
+            "colId": "2ac4e0d3-2367-45a8-898b-417480716c1b",
+            "containerId": "1c06d198-40ae-4866-ad37-6a07e7e5b5de",
             "name": "AgregarCategoria",
             "url": "localhost:3000/SalesManagement/v1/category/agregar",
             "method": "POST",
             "sortNum": 50000,
-            "created": "2024-03-07T01:30:40.999Z",
-            "modified": "2024-03-07T02:19:15.446Z",
+            "created": "2024-03-08T02:04:47.055Z",
+            "modified": "2024-03-08T03:58:25.123Z",
             "headers": [],
             "params": [],
             "body": {
                 "type": "json",
-                "raw": "{\n  \"NombreCategoria\": \"Salud\",\n  \"Descripcion\": \"Seccion para el cuidado personal\"\n}",
+                "raw": "{\n  \"NombreCategoria\": \"Oficina\",\n  \"Descripcion\": \"Seccion para el cuidado personal\"\n}",
                 "form": []
             },
             "reqType": "post",
             "tests": []
         },
         {
-            "_id": "64e4bf66-95e0-49a5-99db-63e9fc17072c",
-            "colId": "43d50307-688a-4e12-a11c-e98a9b9465aa",
-            "containerId": "157245d4-bbde-4e21-90d1-cea5aaf9939d",
+            "_id": "dd24c8ad-1220-4360-9c38-6585e7d8cc0c",
+            "colId": "2ac4e0d3-2367-45a8-898b-417480716c1b",
+            "containerId": "1c06d198-40ae-4866-ad37-6a07e7e5b5de",
             "name": "VerCategorias",
             "url": "localhost:3000/SalesManagement/v1/category/",
             "method": "GET",
-            "sortNum": 60000,
-            "created": "2024-03-07T01:31:00.191Z",
-            "modified": "2024-03-07T02:14:17.484Z",
+            "sortNum": 57500,
+            "created": "2024-03-08T04:05:07.256Z",
+            "modified": "2024-03-08T04:05:07.256Z",
             "headers": [],
             "params": [],
-            "reqType": "get",
             "tests": []
         },
         {
-            "_id": "ef111559-1ec3-454c-a07c-a7b289e4caf8",
-            "colId": "43d50307-688a-4e12-a11c-e98a9b9465aa",
-            "containerId": "157245d4-bbde-4e21-90d1-cea5aaf9939d",
+            "_id": "5f1be3ae-e218-4b8b-98bc-ec63291de982",
+            "colId": "2ac4e0d3-2367-45a8-898b-417480716c1b",
+            "containerId": "1c06d198-40ae-4866-ad37-6a07e7e5b5de",
             "name": "EditarCategoria",
-            "url": "",
+            "url": "localhost:3000/SalesManagement/v1/category/65ea7259cfa15d1976d54276",
             "method": "PUT",
             "sortNum": 70000,
-            "created": "2024-03-07T01:31:25.614Z",
-            "modified": "2024-03-07T01:31:40.234Z",
-            "headers": [],
+            "created": "2024-03-08T02:04:47.057Z",
+            "modified": "2024-03-08T03:08:09.576Z",
+            "headers": [
+                {
+                    "name": "x-token",
+                    "value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1aWQiOiI2NWVhNmVlMDM3YWZmMTEzNmJkYzdmYWIiLCJpYXQiOjE3MDk4NjcyNjMsImV4cCI6MTcwOTg3MDg2M30.RhYXB2LJxio9KBBJxReE1pD4bVjrTbj6CPSIu-hQqoM"
+                }
+            ],
             "params": [],
-            "reqType": "get",
+            "body": {
+                "type": "json",
+                "raw": "{\n  \"NombreCategoria\": \"Juegos\",\n  \"Descripcion\": \"Seccion para videojuegos y entretenimiento\"\n}",
+                "form": []
+            },
+            "reqType": "put",
             "tests": []
         },
         {
-            "_id": "a7c448c2-5e74-48f4-aea0-182092cde3e1",
-            "colId": "43d50307-688a-4e12-a11c-e98a9b9465aa",
-            "containerId": "157245d4-bbde-4e21-90d1-cea5aaf9939d",
+            "_id": "c106e6db-268a-45f5-a0d9-3d9cb8c354cd",
+            "colId": "2ac4e0d3-2367-45a8-898b-417480716c1b",
+            "containerId": "1c06d198-40ae-4866-ad37-6a07e7e5b5de",
             "name": "EliminarCategoria",
-            "url": "",
+            "url": "localhost:3000/SalesManagement/v1/category/65ea8bf237b3a7502ff9b390",
             "method": "DELETE",
             "sortNum": 80000,
-            "created": "2024-03-07T01:31:35.198Z",
-            "modified": "2024-03-07T01:31:44.650Z",
-            "headers": [],
+            "created": "2024-03-08T02:04:47.058Z",
+            "modified": "2024-03-08T03:55:05.461Z",
+            "headers": [
+                {
+                    "name": "x-token",
+                    "value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1aWQiOiI2NWVhNmVlMDM3YWZmMTEzNmJkYzdmYWIiLCJpYXQiOjE3MDk4Njk5NjUsImV4cCI6MTcwOTg3MzU2NX0.5aq-jevlXO_477zp98UAdsG32qVaLZYxx6SVOe04J38"
+                }
+            ],
             "params": [],
-            "reqType": "get",
+            "reqType": "del",
             "tests": []
         }
     ]

@@ -3,8 +3,10 @@ import { check } from "express-validator";
 
 
 import { validarCampos } from "../middlewares/validar-campos.js";
-import { categoriasGet, categoriasPost } from "../category/category.controller.js";
-
+import { categoriasDelete, categoriasGet, categoriasPost, editarCategoria } from "../category/category.controller.js";
+import { validarJWT } from "../middlewares/validar-jwt.js"
+import { existeCategoriaById } from "../helpers/db-validators.js";
+import { tieneRole } from "../middlewares/validar-roles.js";
 
 const router = Router();
 
@@ -21,5 +23,25 @@ router.post(
     categoriasPost
 );
 
+router.put(
+    "/:id",
+    [
+        validarJWT,
+        tieneRole('ADMIN_ROLE'),
+        check("id", "No es un ID válido").isMongoId(),
+        check("id").custom(existeCategoriaById),
+        validarCampos,
+    ],
+    editarCategoria
+);
+
+router.delete(
+    '/:id',
+    [
+        validarJWT,
+        tieneRole('ADMIN_ROLE'),
+    ],
+    categoriasDelete
+);
 
 export default router;
