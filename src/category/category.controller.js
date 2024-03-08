@@ -36,7 +36,7 @@ export const categoriasPost = async (req, res) => {
     }
 };
 
-export const editarCategoria = async (req, res) => {
+export const editarCategoria = async (req, res = response) => {
     try {
         const categoriaId = req.params.id; 
         const { NombreCategoria, Descripcion } = req.body;
@@ -65,7 +65,7 @@ export const editarCategoria = async (req, res) => {
     }
 };
 
-export const categoriasDelete = async (req, res) => {
+export const categoriasDelete = async (req = request, res = response) => {
     try {
         const categoriaId = req.params.id; // Se asume que la ruta tiene un parámetro llamado 'id'
 

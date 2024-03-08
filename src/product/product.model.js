@@ -14,12 +14,12 @@ const ProductoSchema = mongoose.Schema({
         type: Number,
         default: 0
     },
-    stock: {
+    Stock: {
         type: Number,
         default: 0
     },
-    categoria: {
-        type: Schema.Types.ObjectId,
+    Categoria: {
+        type: mongoose.Schema.Types.ObjectId,
         ref: 'Categoria',
         required: true
     },

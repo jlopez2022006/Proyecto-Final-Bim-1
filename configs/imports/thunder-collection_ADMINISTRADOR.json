@@ -1,7 +1,7 @@
 {
     "client": "Thunder Client",
     "collectionName": "ADMINISTRADOR",
-    "dateExported": "2024-03-08T04:07:15.035Z",
+    "dateExported": "2024-03-08T06:02:22.574Z",
     "version": "1.1",
     "folders": [
         {
@@ -17,6 +17,13 @@
             "containerId": "",
             "created": "2024-03-08T02:04:47.053Z",
             "sortNum": 20000
+        },
+        {
+            "_id": "39aba58a-888c-4931-a6e3-b212720d3598",
+            "name": "GestionProductos",
+            "containerId": "",
+            "created": "2024-03-08T04:11:25.171Z",
+            "sortNum": 30000
         }
     ],
     "requests": [
@@ -100,12 +107,12 @@
             "method": "POST",
             "sortNum": 50000,
             "created": "2024-03-08T02:04:47.055Z",
-            "modified": "2024-03-08T03:58:25.123Z",
+            "modified": "2024-03-08T05:22:12.270Z",
             "headers": [],
             "params": [],
             "body": {
                 "type": "json",
-                "raw": "{\n  \"NombreCategoria\": \"Oficina\",\n  \"Descripcion\": \"Seccion para el cuidado personal\"\n}",
+                "raw": "{\n  \"NombreCategoria\": \"Aseo\",\n  \"Descripcion\": \"Seccion para el cuidado personal\"\n}",
                 "form": []
             },
             "reqType": "post",
@@ -164,6 +171,121 @@
                 {
                     "name": "x-token",
                     "value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1aWQiOiI2NWVhNmVlMDM3YWZmMTEzNmJkYzdmYWIiLCJpYXQiOjE3MDk4Njk5NjUsImV4cCI6MTcwOTg3MzU2NX0.5aq-jevlXO_477zp98UAdsG32qVaLZYxx6SVOe04J38"
+                }
+            ],
+            "params": [],
+            "reqType": "del",
+            "tests": []
+        },
+        {
+            "_id": "1f6a1f48-0e92-4225-a0dd-07456eb3281c",
+            "colId": "2ac4e0d3-2367-45a8-898b-417480716c1b",
+            "containerId": "39aba58a-888c-4931-a6e3-b212720d3598",
+            "name": "AgregarProducto",
+            "url": "localhost:3000/SalesManagement/v1/product/agregar",
+            "method": "POST",
+            "sortNum": 90000,
+            "created": "2024-03-08T04:12:21.109Z",
+            "modified": "2024-03-08T05:46:18.808Z",
+            "headers": [
+                {
+                    "name": "x-token",
+                    "value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1aWQiOiI2NWVhNmVlMDM3YWZmMTEzNmJkYzdmYWIiLCJpYXQiOjE3MDk4NzUzNDgsImV4cCI6MTcwOTg3ODk0OH0.Wi5Cr8wzLOv4zwC5Zr914ofy4OIeDVaYI6oeJsgGRDw"
+                }
+            ],
+            "params": [],
+            "body": {
+                "type": "json",
+                "raw": "{\n  \"NombreProducto\": \"equisde\",\n  \"Descripcion\": \"Jabon olor fresa antibacterial de 100ml\",\n  \"Precio\": 60.00,\n  \"Stock\": 0,\n  \"Categoria\": \"65eaa0842cf943c7dcdab605\"\n}",
+                "form": []
+            },
+            "reqType": "post",
+            "tests": []
+        },
+        {
+            "_id": "39d1e6bb-8a8e-421a-93ae-083537184fad",
+            "colId": "2ac4e0d3-2367-45a8-898b-417480716c1b",
+            "containerId": "39aba58a-888c-4931-a6e3-b212720d3598",
+            "name": "VerCatalogo",
+            "url": "localhost:3000/SalesManagement/v1/product/",
+            "method": "GET",
+            "sortNum": 100000,
+            "created": "2024-03-08T04:12:33.628Z",
+            "modified": "2024-03-08T05:23:02.669Z",
+            "headers": [],
+            "params": [],
+            "reqType": "get",
+            "tests": []
+        },
+        {
+            "_id": "caaa3256-9755-435e-8200-3bf3b4e19254",
+            "colId": "2ac4e0d3-2367-45a8-898b-417480716c1b",
+            "containerId": "39aba58a-888c-4931-a6e3-b212720d3598",
+            "name": "BuscarProducto",
+            "url": "localhost:3000/SalesManagement/v1/product/65eaa3dab6cd3c3fde97cc80",
+            "method": "GET",
+            "sortNum": 102500,
+            "created": "2024-03-08T04:13:01.500Z",
+            "modified": "2024-03-08T06:01:29.640Z",
+            "headers": [],
+            "params": [],
+            "reqType": "get",
+            "tests": []
+        },
+        {
+            "_id": "5e980ecb-8cba-4f0b-af20-9040df76fc74",
+            "colId": "2ac4e0d3-2367-45a8-898b-417480716c1b",
+            "containerId": "39aba58a-888c-4931-a6e3-b212720d3598",
+            "name": "ProductosAgotados",
+            "url": "localhost:3000/SalesManagement/v1/product/agotados",
+            "method": "GET",
+            "sortNum": 105000,
+            "created": "2024-03-08T04:18:03.801Z",
+            "modified": "2024-03-08T05:46:03.705Z",
+            "headers": [],
+            "params": [],
+            "reqType": "get",
+            "tests": []
+        },
+        {
+            "_id": "8c9431fd-0252-48a3-b6dd-1eea5869e844",
+            "colId": "2ac4e0d3-2367-45a8-898b-417480716c1b",
+            "containerId": "39aba58a-888c-4931-a6e3-b212720d3598",
+            "name": "EditarProducto",
+            "url": "localhost:3000/SalesManagement/v1/product/65eaa3dab6cd3c3fde97cc80",
+            "method": "PUT",
+            "sortNum": 120000,
+            "created": "2024-03-08T04:13:29.412Z",
+            "modified": "2024-03-08T06:01:14.497Z",
+            "headers": [
+                {
+                    "name": "x-token",
+                    "value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1aWQiOiI2NWVhNmVlMDM3YWZmMTEzNmJkYzdmYWIiLCJpYXQiOjE3MDk4NzUzNDgsImV4cCI6MTcwOTg3ODk0OH0.Wi5Cr8wzLOv4zwC5Zr914ofy4OIeDVaYI6oeJsgGRDw"
+                }
+            ],
+            "params": [],
+            "body": {
+                "type": "json",
+                "raw": "{\n  \"NombreProducto\": \"Pasta Dental\",\n  \"Descripcion\": \"Pasta dental con carbon activado\",\n  \"Precio\": 20.00,\n  \"Stock\": 0,\n  \"Categoria\": \"65eaa0842cf943c7dcdab605\"\n}",
+                "form": []
+            },
+            "reqType": "put",
+            "tests": []
+        },
+        {
+            "_id": "03643f8a-0561-4ae4-8665-fd2f4cd0056b",
+            "colId": "2ac4e0d3-2367-45a8-898b-417480716c1b",
+            "containerId": "39aba58a-888c-4931-a6e3-b212720d3598",
+            "name": "EliminarProducto",
+            "url": "localhost:3000/SalesManagement/v1/product/65eaa5531314b4e09aec3420",
+            "method": "DELETE",
+            "sortNum": 130000,
+            "created": "2024-03-08T04:14:21.867Z",
+            "modified": "2024-03-08T06:00:17.548Z",
+            "headers": [
+                {
+                    "name": "x-token",
+                    "value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1aWQiOiI2NWVhNmVlMDM3YWZmMTEzNmJkYzdmYWIiLCJpYXQiOjE3MDk4NzUzNDgsImV4cCI6MTcwOTg3ODk0OH0.Wi5Cr8wzLOv4zwC5Zr914ofy4OIeDVaYI6oeJsgGRDw"
                 }
             ],
             "params": [],
