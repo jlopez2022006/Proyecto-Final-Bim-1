@@ -1,10 +1,11 @@
 import { response, request } from "express";
 import bcryptjs from 'bcryptjs';
 import Categoria from './category.model.js';
+import Producto from '../product/product.model.js'
 
 export const categoriasGet = async (req, res) => {
     try {
-        const categorias = await Categoria.find({estado: true});
+        const categorias = await Categoria.find({ estado: true });
         res.status(200).json(categorias);
     } catch (error) {
         console.error(error);
@@ -14,7 +15,6 @@ export const categoriasGet = async (req, res) => {
         });
     }
 };
-
 
 export const categoriasPost = async (req, res) => {
     try {
@@ -38,7 +38,7 @@ export const categoriasPost = async (req, res) => {
 
 export const editarCategoria = async (req, res = response) => {
     try {
-        const categoriaId = req.params.id; 
+        const categoriaId = req.params.id;
         const { NombreCategoria, Descripcion } = req.body;
 
         // Verificar si la categoría con el ID proporcionado existe
@@ -66,18 +66,22 @@ export const editarCategoria = async (req, res = response) => {
 };
 
 export const categoriasDelete = async (req = request, res = response) => {
+    const { id } = req.params;
     try {
-        const categoriaId = req.params.id; // Se asume que la ruta tiene un parámetro llamado 'id'
-
         // Verificar si la categoría con el ID proporcionado existe
-        const categoriaExistente = await Categoria.findById(categoriaId);
+        const categoriaExistente = await Categoria.findById(id);
         if (!categoriaExistente) {
             return res.status(404).json({ msg: 'Categoría no encontrada.' });
         }
-
+        // Obtener la categoría predefinida a la que se transferirán los productos
+        const categoriaPredefinida = await Categoria.findOne({ NombreCategoria: 'Categoria predefinida' });
+        if (!categoriaPredefinida) {
+            return res.status(500).json({ msg: 'Categoría predefinida no encontrada.' });
+        }
+        // Actualizar los productos asociados a la categoría que se eliminará
+        await Producto.updateMany({ Categoria: id }, { Categoria: categoriaPredefinida._id });
         // Eliminar la categoría de la base de datos
-        const categoriaEliminada = await Categoria.findByIdAndUpdate(categoriaId, { estado: false });
-
+        const categoriaEliminada = await Categoria.findByIdAndUpdate(id, { estado: false });
         res.json({
             msg: 'Categoría eliminada exitosamente.',
             categoria: categoriaEliminada

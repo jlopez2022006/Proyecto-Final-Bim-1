@@ -18,6 +18,29 @@ export const productosGet = async (req, res) => {
     }
 };
 
+export const obtenerProductosPorCategoria = async (req, res) => {
+    try {
+        const { NombreCategoria } = req.body;
+        if (!NombreCategoria) {
+            return res.status(400).json({ msg: 'Por favor, proporciona el nombre de la categoría en el cuerpo de la solicitud.' });
+        }
+
+        const categoria = await Categoria.findOne({ NombreCategoria: NombreCategoria });
+
+        if (!categoria) {
+            return res.status(404).json({ msg: 'Categoría no encontrada.' });
+        }
+
+        const productos = await Producto.find({ Categoria: categoria._id });
+
+        res.status(200).json(productos);
+    } catch (error) {
+        console.error(error);
+        res.status(500).json({ msg: 'Error al obtener productos por categoría.' });
+    }
+};
+
+
 export const productosAgotadosGet = async (req, res) => {
     try {
         const productos = await Producto.find({ estado: true, Stock: 0 }).populate('Categoria', 'NombreCategoria');

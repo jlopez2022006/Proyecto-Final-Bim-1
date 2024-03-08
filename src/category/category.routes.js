@@ -17,6 +17,8 @@ router.get('/', categoriasGet);
 router.post(
     '/agregar',
     [
+        validarJWT,
+        tieneRole('ADMIN_ROLE'),
         check('NombreCategoria', 'El nombre es obligatorio').not().isEmpty(),
         validarCampos,
     ],
@@ -24,7 +26,7 @@ router.post(
 );
 
 router.put(
-    "/:id",
+    "/editar/:id",
     [
         validarJWT,
         tieneRole('ADMIN_ROLE'),
@@ -36,7 +38,7 @@ router.put(
 );
 
 router.delete(
-    '/:id',
+    '/eliminar/:id',
     [
         validarJWT,
         tieneRole('ADMIN_ROLE'),
