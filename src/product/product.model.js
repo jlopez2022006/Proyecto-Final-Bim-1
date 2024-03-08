@@ -3,7 +3,7 @@ import mongoose from 'mongoose';
 const ProductoSchema = mongoose.Schema({
     NombreProducto: {
         type: String,
-        required: [true , 'El nombre de la cateogira es obligatorio'],
+        required: [true , 'El nombre del producto es obligatorio'],
         unique: true
     },
     Descripcion: {
