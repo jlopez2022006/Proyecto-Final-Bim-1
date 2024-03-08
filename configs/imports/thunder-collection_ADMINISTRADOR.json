@@ -1,76 +1,76 @@
 {
     "client": "Thunder Client",
     "collectionName": "ADMINISTRADOR",
-    "dateExported": "2024-03-08T06:31:10.505Z",
+    "dateExported": "2024-03-08T17:49:45.954Z",
     "version": "1.1",
     "folders": [
         {
-            "_id": "891a5d37-5dfd-434b-9256-aa133bc732fd",
+            "_id": "d99d1a6a-643a-4c4f-affb-81ef0efb446a",
             "name": "GestionUsuarios",
             "containerId": "",
-            "created": "2024-03-08T06:08:44.558Z",
+            "created": "2024-03-08T13:08:13.983Z",
             "sortNum": 10000
         },
         {
-            "_id": "dbe884b9-8e5d-45cb-bbcd-b2c91a630901",
+            "_id": "f01d8c95-b057-46e2-886e-d7744f75be18",
             "name": "GestionCategoria",
             "containerId": "",
-            "created": "2024-03-08T06:08:44.559Z",
+            "created": "2024-03-08T13:08:13.984Z",
             "sortNum": 20000
         },
         {
-            "_id": "ea827874-2ec2-44f1-afb6-d11c90d67b2f",
+            "_id": "01bf7c5e-497e-4db2-931f-e30a3fcd0375",
             "name": "GestionProductos",
             "containerId": "",
-            "created": "2024-03-08T06:08:44.560Z",
+            "created": "2024-03-08T13:08:13.985Z",
             "sortNum": 30000
         }
     ],
     "requests": [
         {
-            "_id": "211e8b7b-aead-4191-ae64-2b930e722d49",
-            "colId": "0c802694-0f19-4863-9c27-b0d970941100",
-            "containerId": "891a5d37-5dfd-434b-9256-aa133bc732fd",
+            "_id": "00168f2a-6622-4565-86a0-b5eba458be95",
+            "colId": "b7386f40-2711-4dd4-8791-809833c8d53e",
+            "containerId": "d99d1a6a-643a-4c4f-affb-81ef0efb446a",
             "name": "AgregarUsuario",
             "url": "localhost:3000/SalesManagement/v1/users",
             "method": "POST",
             "sortNum": 5000,
-            "created": "2024-03-08T06:08:44.563Z",
-            "modified": "2024-03-08T06:08:58.410Z",
+            "created": "2024-03-08T13:08:13.988Z",
+            "modified": "2024-03-08T13:10:05.024Z",
             "headers": [],
             "params": [],
             "body": {
                 "type": "json",
-                "raw": "{\n  \"nombre\": \"Jeshua Lopez\",\n  \"correo\": \"ilopez@gmail.com\",\n  \"password\": \"123456\",\n  \"rol\": \"ADMIN_ROLE\"\n}",
+                "raw": "{\n  \"nombre\": \"Jeshua Lopez\",\n  \"correo\": \"jlopez@gmail.com\",\n  \"password\": \"123456\",\n  \"rol\": \"ADMIN_ROLE\"\n}",
                 "form": []
             },
             "reqType": "post",
             "tests": []
         },
         {
-            "_id": "9d547c6a-0642-44b6-8c21-d2c654a555ec",
-            "colId": "0c802694-0f19-4863-9c27-b0d970941100",
-            "containerId": "891a5d37-5dfd-434b-9256-aa133bc732fd",
+            "_id": "da3bde41-ad77-4253-a18b-0669145183b6",
+            "colId": "b7386f40-2711-4dd4-8791-809833c8d53e",
+            "containerId": "d99d1a6a-643a-4c4f-affb-81ef0efb446a",
             "name": "VerUsuarios",
             "url": "localhost:3000/SalesManagement/v1/users/",
             "method": "GET",
             "sortNum": 10000,
-            "created": "2024-03-08T06:08:44.564Z",
-            "modified": "2024-03-08T06:08:44.564Z",
+            "created": "2024-03-08T13:08:13.989Z",
+            "modified": "2024-03-08T13:08:13.989Z",
             "headers": [],
             "params": [],
             "tests": []
         },
         {
-            "_id": "b3c3f880-9979-4038-a534-b92c6ff3fc92",
-            "colId": "0c802694-0f19-4863-9c27-b0d970941100",
-            "containerId": "891a5d37-5dfd-434b-9256-aa133bc732fd",
+            "_id": "5d9b42c9-467f-494a-b7b8-0b7b201b50fb",
+            "colId": "b7386f40-2711-4dd4-8791-809833c8d53e",
+            "containerId": "d99d1a6a-643a-4c4f-affb-81ef0efb446a",
             "name": "ModificarUsuario",
             "url": "localhost:3000/SalesManagement/v1/users/65e9365e6fd38b3ebfbd1988",
             "method": "PUT",
             "sortNum": 20000,
-            "created": "2024-03-08T06:08:44.558Z",
-            "modified": "2024-03-08T06:08:44.558Z",
+            "created": "2024-03-08T13:08:13.983Z",
+            "modified": "2024-03-08T13:08:13.983Z",
             "headers": [],
             "params": [],
             "body": {
@@ -81,15 +81,15 @@
             "tests": []
         },
         {
-            "_id": "eedf0e7d-8769-432c-879b-4fd4a8888c03",
-            "colId": "0c802694-0f19-4863-9c27-b0d970941100",
-            "containerId": "891a5d37-5dfd-434b-9256-aa133bc732fd",
+            "_id": "d34d26ff-9f5d-486f-be4a-ac9dafab33a7",
+            "colId": "b7386f40-2711-4dd4-8791-809833c8d53e",
+            "containerId": "d99d1a6a-643a-4c4f-affb-81ef0efb446a",
             "name": "EliminarUsuarios",
             "url": "localhost:3000/SalesManagement/v1/users/65e9365e6fd38b3ebfbd1988",
             "method": "DELETE",
             "sortNum": 40000,
-            "created": "2024-03-08T06:08:44.559Z",
-            "modified": "2024-03-08T06:08:44.559Z",
+            "created": "2024-03-08T13:08:13.984Z",
+            "modified": "2024-03-08T13:08:13.984Z",
             "headers": [
                 {
                     "name": "x-token",
@@ -100,49 +100,54 @@
             "tests": []
         },
         {
-            "_id": "7cee40ed-a457-459f-996a-1881df9c1cd9",
-            "colId": "0c802694-0f19-4863-9c27-b0d970941100",
-            "containerId": "dbe884b9-8e5d-45cb-bbcd-b2c91a630901",
+            "_id": "67ce4932-0dee-4b13-90e5-8cbfb3efc022",
+            "colId": "b7386f40-2711-4dd4-8791-809833c8d53e",
+            "containerId": "f01d8c95-b057-46e2-886e-d7744f75be18",
             "name": "AgregarCategoria",
             "url": "localhost:3000/SalesManagement/v1/category/agregar",
             "method": "POST",
             "sortNum": 50000,
-            "created": "2024-03-08T06:08:44.560Z",
-            "modified": "2024-03-08T06:10:10.624Z",
-            "headers": [],
+            "created": "2024-03-08T13:08:13.985Z",
+            "modified": "2024-03-08T14:33:59.918Z",
+            "headers": [
+                {
+                    "name": "x-token",
+                    "value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1aWQiOiI2NWViMGUyYzZkNzgwYTA5ZTQ5YzA3NjkiLCJpYXQiOjE3MDk5MDg0MTgsImV4cCI6MTcwOTkxMjAxOH0.WBqTvSeh3dFWtTWF9fyIcNhHEZY8mCHIlPcYcBBjOao"
+                }
+            ],
             "params": [],
             "body": {
                 "type": "json",
-                "raw": "{\n  \"NombreCategoria\": \"Juegos\",\n  \"Descripcion\": \"Seccion para el entretenimiento personal\"\n}",
+                "raw": "{\n  \"NombreCategoria\": \"Categoria predefinida\",\n  \"Descripcion\": \"Categoria predefinida\"\n}",
                 "form": []
             },
             "reqType": "post",
             "tests": []
         },
         {
-            "_id": "e984cace-5496-4b5a-96c2-b7747a6e1bb0",
-            "colId": "0c802694-0f19-4863-9c27-b0d970941100",
-            "containerId": "dbe884b9-8e5d-45cb-bbcd-b2c91a630901",
+            "_id": "4a9afa3f-9294-41ce-95c3-eb0994c78142",
+            "colId": "b7386f40-2711-4dd4-8791-809833c8d53e",
+            "containerId": "f01d8c95-b057-46e2-886e-d7744f75be18",
             "name": "VerCategorias",
             "url": "localhost:3000/SalesManagement/v1/category/",
             "method": "GET",
             "sortNum": 57500,
-            "created": "2024-03-08T06:08:44.565Z",
-            "modified": "2024-03-08T06:08:44.565Z",
+            "created": "2024-03-08T13:08:13.990Z",
+            "modified": "2024-03-08T13:08:13.990Z",
             "headers": [],
             "params": [],
             "tests": []
         },
         {
-            "_id": "21d942c6-7b98-47ba-8d3d-acb20ed27cdd",
-            "colId": "0c802694-0f19-4863-9c27-b0d970941100",
-            "containerId": "dbe884b9-8e5d-45cb-bbcd-b2c91a630901",
+            "_id": "1f4e9b4e-a984-47a2-b7fa-24af9d393235",
+            "colId": "b7386f40-2711-4dd4-8791-809833c8d53e",
+            "containerId": "f01d8c95-b057-46e2-886e-d7744f75be18",
             "name": "EditarCategoria",
-            "url": "localhost:3000/SalesManagement/v1/category/65ea7259cfa15d1976d54276",
+            "url": "localhost:3000/SalesManagement/v1/category/editar/65ea7259cfa15d1976d54276",
             "method": "PUT",
             "sortNum": 70000,
-            "created": "2024-03-08T06:08:44.561Z",
-            "modified": "2024-03-08T06:08:44.561Z",
+            "created": "2024-03-08T13:08:13.986Z",
+            "modified": "2024-03-08T14:39:01.264Z",
             "headers": [
                 {
                     "name": "x-token",
@@ -155,105 +160,107 @@
                 "raw": "{\n  \"NombreCategoria\": \"Juegos\",\n  \"Descripcion\": \"Seccion para videojuegos y entretenimiento\"\n}",
                 "form": []
             },
+            "reqType": "put",
             "tests": []
         },
         {
-            "_id": "4c0f590b-b70b-48be-9957-e8d957bea2eb",
-            "colId": "0c802694-0f19-4863-9c27-b0d970941100",
-            "containerId": "dbe884b9-8e5d-45cb-bbcd-b2c91a630901",
+            "_id": "ad3ec1d4-b68a-4610-9db1-a358a5c2808e",
+            "colId": "b7386f40-2711-4dd4-8791-809833c8d53e",
+            "containerId": "f01d8c95-b057-46e2-886e-d7744f75be18",
             "name": "EliminarCategoria",
-            "url": "localhost:3000/SalesManagement/v1/category/65ea8bf237b3a7502ff9b390",
+            "url": "localhost:3000/SalesManagement/v1/category/eliminar/65eb0e576d780a09e49c0772",
             "method": "DELETE",
             "sortNum": 80000,
-            "created": "2024-03-08T06:08:44.562Z",
-            "modified": "2024-03-08T06:08:44.562Z",
+            "created": "2024-03-08T13:08:13.987Z",
+            "modified": "2024-03-08T15:09:37.819Z",
             "headers": [
                 {
                     "name": "x-token",
-                    "value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1aWQiOiI2NWVhNmVlMDM3YWZmMTEzNmJkYzdmYWIiLCJpYXQiOjE3MDk4Njk5NjUsImV4cCI6MTcwOTg3MzU2NX0.5aq-jevlXO_477zp98UAdsG32qVaLZYxx6SVOe04J38"
+                    "value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1aWQiOiI2NWViMGUyYzZkNzgwYTA5ZTQ5YzA3NjkiLCJpYXQiOjE3MDk5MDg0MTgsImV4cCI6MTcwOTkxMjAxOH0.WBqTvSeh3dFWtTWF9fyIcNhHEZY8mCHIlPcYcBBjOao"
                 }
             ],
             "params": [],
+            "reqType": "del",
             "tests": []
         },
         {
-            "_id": "b8288c61-ed70-4111-815a-504de2cad368",
-            "colId": "0c802694-0f19-4863-9c27-b0d970941100",
-            "containerId": "ea827874-2ec2-44f1-afb6-d11c90d67b2f",
+            "_id": "d7f2b496-de6c-4416-9499-e1b33913bf82",
+            "colId": "b7386f40-2711-4dd4-8791-809833c8d53e",
+            "containerId": "01bf7c5e-497e-4db2-931f-e30a3fcd0375",
             "name": "AgregarProducto",
             "url": "localhost:3000/SalesManagement/v1/product/agregar",
             "method": "POST",
             "sortNum": 90000,
-            "created": "2024-03-08T06:08:44.566Z",
-            "modified": "2024-03-08T06:11:42.703Z",
+            "created": "2024-03-08T13:08:13.991Z",
+            "modified": "2024-03-08T13:42:26.054Z",
             "headers": [
                 {
                     "name": "x-token",
-                    "value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1aWQiOiI2NWVhYWI3YjFjMjdkMDljOWIwZGRjZDQiLCJpYXQiOjE3MDk4NzgxODcsImV4cCI6MTcwOTg4MTc4N30.UE5bQLsrIWXY7wYeB8G0sRNTCXva4ZU5SchVXAU6UDo"
+                    "value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1aWQiOiI2NWViMGUyYzZkNzgwYTA5ZTQ5YzA3NjkiLCJpYXQiOjE3MDk5MDM0MjAsImV4cCI6MTcwOTkwNzAyMH0.j1cVWSO17-LtPACF7AFGfvG9LdLqRQ2CJ-7onCIjAhA"
                 }
             ],
             "params": [],
             "body": {
                 "type": "json",
-                "raw": "{\n  \"NombreProducto\": \"Control de PS4\",\n  \"Descripcion\": \"Control para jugar tu ps4\",\n  \"Precio\": 300.00,\n  \"Stock\": 10,\n  \"Categoria\": \"65eaabc21c27d09c9b0ddce3\"\n}",
+                "raw": "{\n  \"NombreProducto\": \"Jabon Antibacterial\",\n  \"Descripcion\": \"Jabon aroma fresa de 100ml\",\n  \"Precio\": 40.00,\n  \"Stock\": 10,\n  \"Categoria\": \"65eb0e576d780a09e49c0772\"\n}",
                 "form": []
             },
             "reqType": "post",
             "tests": []
         },
         {
-            "_id": "1f12c058-7a56-48de-8d11-e8839c9769f6",
-            "colId": "0c802694-0f19-4863-9c27-b0d970941100",
-            "containerId": "ea827874-2ec2-44f1-afb6-d11c90d67b2f",
+            "_id": "7b32dd77-1d22-4c41-98b6-44fb53a079d9",
+            "colId": "b7386f40-2711-4dd4-8791-809833c8d53e",
+            "containerId": "01bf7c5e-497e-4db2-931f-e30a3fcd0375",
             "name": "VerCatalogo",
             "url": "localhost:3000/SalesManagement/v1/product/",
             "method": "GET",
             "sortNum": 100000,
-            "created": "2024-03-08T06:08:44.567Z",
-            "modified": "2024-03-08T06:08:44.567Z",
+            "created": "2024-03-08T13:08:13.992Z",
+            "modified": "2024-03-08T13:08:13.992Z",
             "headers": [],
             "params": [],
             "tests": []
         },
         {
-            "_id": "16015442-b697-4d1c-b6f7-42a48883cfe2",
-            "colId": "0c802694-0f19-4863-9c27-b0d970941100",
-            "containerId": "ea827874-2ec2-44f1-afb6-d11c90d67b2f",
+            "_id": "7ed14c2c-f3b5-4203-bffa-0c2b9f7b54b6",
+            "colId": "b7386f40-2711-4dd4-8791-809833c8d53e",
+            "containerId": "01bf7c5e-497e-4db2-931f-e30a3fcd0375",
             "name": "BuscarProducto",
-            "url": "localhost:3000/SalesManagement/v1/product/65eaac1e1c27d09c9b0ddcf2",
+            "url": "localhost:3000/SalesManagement/v1/product/65eb0ece6d780a09e49c0778",
             "method": "GET",
             "sortNum": 102500,
-            "created": "2024-03-08T06:08:44.568Z",
-            "modified": "2024-03-08T06:11:58.327Z",
+            "created": "2024-03-08T13:08:13.993Z",
+            "modified": "2024-03-08T13:18:55.504Z",
             "headers": [],
             "params": [],
             "reqType": "get",
             "tests": []
         },
         {
-            "_id": "c29432a1-8052-41b4-be31-f274741dff19",
-            "colId": "0c802694-0f19-4863-9c27-b0d970941100",
-            "containerId": "ea827874-2ec2-44f1-afb6-d11c90d67b2f",
+            "_id": "1e863685-bb17-4b9d-96a7-c82b3a96b4e4",
+            "colId": "b7386f40-2711-4dd4-8791-809833c8d53e",
+            "containerId": "01bf7c5e-497e-4db2-931f-e30a3fcd0375",
             "name": "ProductosAgotados",
             "url": "localhost:3000/SalesManagement/v1/product/agotados",
             "method": "GET",
             "sortNum": 105000,
-            "created": "2024-03-08T06:08:44.571Z",
-            "modified": "2024-03-08T06:08:44.571Z",
+            "created": "2024-03-08T13:08:13.996Z",
+            "modified": "2024-03-08T13:08:13.996Z",
             "headers": [],
             "params": [],
             "tests": []
         },
         {
-            "_id": "bab034c4-f7b5-46ba-a79c-1f0234c5d524",
-            "colId": "0c802694-0f19-4863-9c27-b0d970941100",
-            "containerId": "ea827874-2ec2-44f1-afb6-d11c90d67b2f",
+            "_id": "9a968176-24af-4c84-b402-7f4871e9bbca",
+            "colId": "b7386f40-2711-4dd4-8791-809833c8d53e",
+            "containerId": "01bf7c5e-497e-4db2-931f-e30a3fcd0375",
             "name": "EditarProducto",
             "url": "localhost:3000/SalesManagement/v1/product/65eaac1e1c27d09c9b0ddcf2",
             "method": "PUT",
             "sortNum": 120000,
-            "created": "2024-03-08T06:08:44.569Z",
-            "modified": "2024-03-08T06:12:40.291Z",
+            "created": "2024-03-08T13:08:13.994Z",
+            "modified": "2024-03-08T13:08:13.994Z",
             "headers": [
                 {
                     "name": "x-token",
@@ -266,19 +273,18 @@
                 "raw": "{\n  \"NombreProducto\": \"Control de PS4\",\n  \"Descripcion\": \"Control para jugar tu ps4\",\n  \"Precio\": 300.00,\n  \"Stock\": 0,\n  \"Categoria\": \"65eaabc21c27d09c9b0ddce3\"\n}",
                 "form": []
             },
-            "reqType": "put",
             "tests": []
         },
         {
-            "_id": "573229ab-edd9-440b-a1dd-a5ddb142f233",
-            "colId": "0c802694-0f19-4863-9c27-b0d970941100",
-            "containerId": "ea827874-2ec2-44f1-afb6-d11c90d67b2f",
+            "_id": "4c68513d-de7f-4bef-b4f5-7451bdee5058",
+            "colId": "b7386f40-2711-4dd4-8791-809833c8d53e",
+            "containerId": "01bf7c5e-497e-4db2-931f-e30a3fcd0375",
             "name": "EliminarProducto",
             "url": "localhost:3000/SalesManagement/v1/product/65eaabf71c27d09c9b0ddce9",
             "method": "DELETE",
             "sortNum": 130000,
-            "created": "2024-03-08T06:08:44.570Z",
-            "modified": "2024-03-08T06:13:00.216Z",
+            "created": "2024-03-08T13:08:13.995Z",
+            "modified": "2024-03-08T13:08:13.995Z",
             "headers": [
                 {
                     "name": "x-token",
@@ -286,7 +292,6 @@
                 }
             ],
             "params": [],
-            "reqType": "del",
             "tests": []
         }
     ]
