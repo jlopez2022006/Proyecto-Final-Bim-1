@@ -1,20 +1,20 @@
 {
     "client": "Thunder Client",
     "collectionName": "LOGIN",
-    "dateExported": "2024-03-09T04:52:23.405Z",
+    "dateExported": "2024-03-09T05:31:48.088Z",
     "version": "1.1",
     "folders": [],
     "requests": [
         {
-            "_id": "896b6328-b846-4311-926f-f5865fef144d",
-            "colId": "34ea332f-926e-4d89-856b-c7de98c62520",
+            "_id": "06c08b3b-db49-47a4-93fa-62d777901350",
+            "colId": "835314de-0f01-46fe-9eb1-f16d255e9c8c",
             "containerId": "",
             "name": "Registrar",
             "url": "localhost:3000/SalesManagement/v1/users/agregarCliente",
             "method": "POST",
             "sortNum": 5000,
-            "created": "2024-03-09T01:59:52.365Z",
-            "modified": "2024-03-09T01:59:52.365Z",
+            "created": "2024-03-09T04:58:10.721Z",
+            "modified": "2024-03-09T04:58:10.721Z",
             "headers": [],
             "params": [],
             "body": {
@@ -22,24 +22,23 @@
                 "raw": "{\n  \"nombre\": \"Pedro Lopez\",\n  \"correo\": \"plopez@gmail.com\",\n  \"password\": \"123456\"\n}",
                 "form": []
             },
-            "reqType": "post",
             "tests": []
         },
         {
-            "_id": "e7147424-38c9-481b-ba0c-e9f2c88c1f0a",
-            "colId": "34ea332f-926e-4d89-856b-c7de98c62520",
+            "_id": "e9495f3a-a439-45de-b29c-cbecabddb3c6",
+            "colId": "835314de-0f01-46fe-9eb1-f16d255e9c8c",
             "containerId": "",
             "name": "Login",
             "url": "localhost:3000/SalesManagement/v1/auth/login",
             "method": "POST",
             "sortNum": 10000,
-            "created": "2024-03-09T01:07:15.268Z",
-            "modified": "2024-03-09T04:24:42.375Z",
+            "created": "2024-03-09T04:58:10.720Z",
+            "modified": "2024-03-09T05:26:48.080Z",
             "headers": [],
             "params": [],
             "body": {
                 "type": "json",
-                "raw": "{\n  \"correo\": \"plopez@gmail.com\",\n  \"password\": \"123456\"\n}",
+                "raw": "{\n  \"correo\": \"jlopez@gmail.com\",\n  \"password\": \"123456\"\n}",
                 "form": []
             },
             "reqType": "post",

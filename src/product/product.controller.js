@@ -32,7 +32,7 @@ export const obtenerProductosPorCategoria = async (req, res) => {
             return res.status(404).json({ msg: 'Categoría no encontrada.' });
         }
 
-        const productos = await Producto.find({ Categoria: categoria._id });
+        const productos = await Producto.find({ Categoria: categoria._id,  estado: true });
 
         res.status(200).json(productos);
     } catch (error) {

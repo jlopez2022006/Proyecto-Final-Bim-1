@@ -1,0 +1,45 @@
+[{
+  "_id": {
+    "$oid": "65ebee94b295dfe57e2d3da8"
+  },
+  "NombreCategoria": "Categoria predefinida",
+  "Descripcion": "Categoria predefinida",
+  "estado": true,
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "65ebeeadb295dfe57e2d3dac"
+  },
+  "NombreCategoria": "Videojuegos",
+  "Descripcion": "Seccion para el entretenimiento",
+  "estado": false,
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "65ebeeb7b295dfe57e2d3db0"
+  },
+  "NombreCategoria": "Comida",
+  "Descripcion": "Seccion para el alimento",
+  "estado": true,
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "65ebeec0b295dfe57e2d3db4"
+  },
+  "NombreCategoria": "Aseo",
+  "Descripcion": "Seccion para el cuidado personal",
+  "estado": true,
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "65ebeecfb295dfe57e2d3db8"
+  },
+  "NombreCategoria": "Mascotas",
+  "Descripcion": "Seccion de accesorios domesticos",
+  "estado": true,
+  "__v": 0
+}]

@@ -1,0 +1,212 @@
+{
+    "client": "Thunder Client",
+    "collectionName": "CLIENTE",
+    "dateExported": "2024-03-09T05:31:43.080Z",
+    "version": "1.1",
+    "folders": [
+        {
+            "_id": "87801760-c8ea-4a0b-87dc-2e0643681d41",
+            "name": "Perfil",
+            "containerId": "",
+            "created": "2024-03-09T04:58:10.693Z",
+            "sortNum": 20000
+        },
+        {
+            "_id": "8f5c00ff-b2ec-42e6-99b5-7a140b24e460",
+            "name": "Productos",
+            "containerId": "",
+            "created": "2024-03-09T04:58:10.694Z",
+            "sortNum": 30000
+        },
+        {
+            "_id": "2e391fc5-77d9-4ade-8fbc-b352f0ad5a46",
+            "name": "Carrito",
+            "containerId": "",
+            "created": "2024-03-09T04:58:10.695Z",
+            "sortNum": 40000
+        },
+        {
+            "_id": "cc6d2afd-6b82-446f-b367-e0d939c85b85",
+            "name": "Factura",
+            "containerId": "",
+            "created": "2024-03-09T04:58:10.696Z",
+            "sortNum": 50000
+        }
+    ],
+    "requests": [
+        {
+            "_id": "2b6cc64b-9ffe-4a19-8539-4e0f911f463e",
+            "colId": "2193a31e-3b9d-44b8-a004-6a36bc90e2ba",
+            "containerId": "8f5c00ff-b2ec-42e6-99b5-7a140b24e460",
+            "name": "VerCategorias",
+            "url": "localhost:3000/SalesManagement/v1/category/",
+            "method": "GET",
+            "sortNum": 5000,
+            "created": "2024-03-09T04:58:10.696Z",
+            "modified": "2024-03-09T04:58:10.696Z",
+            "headers": [],
+            "params": [],
+            "tests": []
+        },
+        {
+            "_id": "935b0d30-afce-4e05-b83d-1019169d3ef3",
+            "colId": "2193a31e-3b9d-44b8-a004-6a36bc90e2ba",
+            "containerId": "8f5c00ff-b2ec-42e6-99b5-7a140b24e460",
+            "name": "BuscarProducto",
+            "url": "localhost:3000/SalesManagement/v1/product/buscar",
+            "method": "POST",
+            "sortNum": 15000,
+            "created": "2024-03-09T04:58:10.695Z",
+            "modified": "2024-03-09T05:21:29.340Z",
+            "headers": [],
+            "params": [],
+            "body": {
+                "type": "json",
+                "raw": "{\n    \"NombreProducto\": \"Frijoles\"\n}",
+                "form": []
+            },
+            "reqType": "post",
+            "tests": []
+        },
+        {
+            "_id": "37b2aa75-ba80-4e19-ac12-2e6930bb2a31",
+            "colId": "2193a31e-3b9d-44b8-a004-6a36bc90e2ba",
+            "containerId": "87801760-c8ea-4a0b-87dc-2e0643681d41",
+            "name": "EditarPerfil",
+            "url": "localhost:3000/SalesManagement/v1/users/editarPerfil/65ebf1019b263ecac244a1d1",
+            "method": "PUT",
+            "sortNum": 20000,
+            "created": "2024-03-09T04:58:10.693Z",
+            "modified": "2024-03-09T05:18:15.422Z",
+            "headers": [],
+            "params": [],
+            "body": {
+                "type": "json",
+                "raw": "{\n  \"nombre\": \"Juan Lopez\",\n  \"correo\": \"plopez@gmail.com\",\n  \"oldPassword\": \"123456\",\n  \"password\": \"654321\"\n}",
+                "form": []
+            },
+            "reqType": "put",
+            "tests": []
+        },
+        {
+            "_id": "ed37d434-19bc-4dd1-a523-9f36c9e586af",
+            "colId": "2193a31e-3b9d-44b8-a004-6a36bc90e2ba",
+            "containerId": "8f5c00ff-b2ec-42e6-99b5-7a140b24e460",
+            "name": "BuscarPorCategoria",
+            "url": "localhost:3000/SalesManagement/v1/product/productos",
+            "method": "POST",
+            "sortNum": 25000,
+            "created": "2024-03-09T04:58:10.697Z",
+            "modified": "2024-03-09T05:21:48.100Z",
+            "headers": [],
+            "params": [],
+            "body": {
+                "type": "json",
+                "raw": "{\n  \"NombreCategoria\": \"Mascotas\"\n}",
+                "form": []
+            },
+            "reqType": "post",
+            "tests": []
+        },
+        {
+            "_id": "5336018a-788e-4f4b-af1c-c505f4416dee",
+            "colId": "2193a31e-3b9d-44b8-a004-6a36bc90e2ba",
+            "containerId": "87801760-c8ea-4a0b-87dc-2e0643681d41",
+            "name": "EliminarCuenta",
+            "url": "localhost:3000/SalesManagement/v1/users/eliminarPerfil/65ebf1019b263ecac244a1d1",
+            "method": "DELETE",
+            "sortNum": 30000,
+            "created": "2024-03-09T04:58:10.694Z",
+            "modified": "2024-03-09T05:20:26.449Z",
+            "headers": [],
+            "params": [],
+            "body": {
+                "type": "json",
+                "raw": "{\n  \"Password\": \"654321\"\n}",
+                "form": []
+            },
+            "reqType": "del",
+            "tests": []
+        },
+        {
+            "_id": "e61e4a76-5186-45c8-8ef6-bd3b5bbd5a90",
+            "colId": "2193a31e-3b9d-44b8-a004-6a36bc90e2ba",
+            "containerId": "2e391fc5-77d9-4ade-8fbc-b352f0ad5a46",
+            "name": "AgregarProductoCarrito",
+            "url": "localhost:3000/SalesManagement/v1/cart/agregar-producto-carrito/65ebf1c059db92a3b4813c65",
+            "method": "POST",
+            "sortNum": 50000,
+            "created": "2024-03-09T04:58:10.698Z",
+            "modified": "2024-03-09T05:24:24.857Z",
+            "headers": [],
+            "params": [],
+            "body": {
+                "type": "json",
+                "raw": "{\n    \"productoId\": \"65ebef96b295dfe57e2d3ddc\"\n}",
+                "form": []
+            },
+            "reqType": "post",
+            "tests": []
+        },
+        {
+            "_id": "832d5e6e-5b60-4dea-8611-d6445dce45d6",
+            "colId": "2193a31e-3b9d-44b8-a004-6a36bc90e2ba",
+            "containerId": "2e391fc5-77d9-4ade-8fbc-b352f0ad5a46",
+            "name": "VerCarrito",
+            "url": "localhost:3000/SalesManagement/v1/cart/mostrar",
+            "method": "GET",
+            "sortNum": 60000,
+            "created": "2024-03-09T04:58:10.699Z",
+            "modified": "2024-03-09T05:30:17.949Z",
+            "headers": [
+                {
+                    "name": "x-token",
+                    "value": ""
+                }
+            ],
+            "params": [],
+            "reqType": "get",
+            "tests": []
+        },
+        {
+            "_id": "d49a7570-2ee0-4c14-b1e2-06c4b6a1d021",
+            "colId": "2193a31e-3b9d-44b8-a004-6a36bc90e2ba",
+            "containerId": "cc6d2afd-6b82-446f-b367-e0d939c85b85",
+            "name": "GenerarFactura",
+            "url": "localhost:3000/SalesManagement/v1/receipt/factura",
+            "method": "POST",
+            "sortNum": 70000,
+            "created": "2024-03-09T04:58:10.700Z",
+            "modified": "2024-03-09T05:26:16.867Z",
+            "headers": [],
+            "params": [],
+            "body": {
+                "type": "json",
+                "raw": "{\n  \"idUsuario\": \"65ebf1c059db92a3b4813c65\",\n  \"Direccion\": \"123 Calle Principal, Guatemala, Guatemala\",\n  \"MetodoPago\": \"Efectivo\"\n}",
+                "form": []
+            },
+            "reqType": "post",
+            "tests": []
+        },
+        {
+            "_id": "20286e66-36eb-4873-b47e-e50fa66e52a6",
+            "colId": "2193a31e-3b9d-44b8-a004-6a36bc90e2ba",
+            "containerId": "cc6d2afd-6b82-446f-b367-e0d939c85b85",
+            "name": "HistorialDeCompras",
+            "url": "localhost:3000/SalesManagement/v1/receipt/factura",
+            "method": "GET",
+            "sortNum": 80000,
+            "created": "2024-03-09T04:58:10.701Z",
+            "modified": "2024-03-09T05:30:26.513Z",
+            "headers": [
+                {
+                    "name": "x-token",
+                    "value": ""
+                }
+            ],
+            "params": [],
+            "reqType": "get",
+            "tests": []
+        }
+    ]
+}

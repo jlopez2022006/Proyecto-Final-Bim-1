@@ -1,0 +1,353 @@
+{
+    "client": "Thunder Client",
+    "collectionName": "ADMINISTRADOR",
+    "dateExported": "2024-03-09T05:31:34.736Z",
+    "version": "1.1",
+    "folders": [
+        {
+            "_id": "0b4787f0-7841-4bd0-b1f4-a4e2cc31ef80",
+            "name": "GestionUsuarios",
+            "containerId": "",
+            "created": "2024-03-09T04:58:10.666Z",
+            "sortNum": 10000
+        },
+        {
+            "_id": "3af6cebd-9ba5-4b71-b9c8-86eb5a6688c5",
+            "name": "GestionCategoria",
+            "containerId": "",
+            "created": "2024-03-09T04:58:10.667Z",
+            "sortNum": 20000
+        },
+        {
+            "_id": "530c4269-3c29-4c6c-a6a5-e4c09eaa9903",
+            "name": "GestionProductos",
+            "containerId": "",
+            "created": "2024-03-09T04:58:10.668Z",
+            "sortNum": 30000
+        },
+        {
+            "_id": "9d79b247-7da7-4f18-b56c-47102cfc4761",
+            "name": "GestionFacturas",
+            "containerId": "",
+            "created": "2024-03-09T04:58:10.669Z",
+            "sortNum": 40000
+        }
+    ],
+    "requests": [
+        {
+            "_id": "5b32c29b-4b8f-4791-b582-7639ba9fb69b",
+            "colId": "b77c72a3-9076-4484-82ec-d032c39d78d2",
+            "containerId": "0b4787f0-7841-4bd0-b1f4-a4e2cc31ef80",
+            "name": "AgregarUsuario",
+            "url": "localhost:3000/SalesManagement/v1/users",
+            "method": "POST",
+            "sortNum": 5000,
+            "created": "2024-03-09T04:58:10.671Z",
+            "modified": "2024-03-09T04:58:10.671Z",
+            "headers": [],
+            "params": [],
+            "body": {
+                "type": "json",
+                "raw": "{\n  \"nombre\": \"Jeshua Lopez\",\n  \"correo\": \"jlopez@gmail.com\",\n  \"password\": \"123456\",\n  \"rol\": \"ADMIN_ROLE\"\n}",
+                "form": []
+            },
+            "tests": []
+        },
+        {
+            "_id": "080ce0b7-b5cb-42aa-b518-1f37ec4559ee",
+            "colId": "b77c72a3-9076-4484-82ec-d032c39d78d2",
+            "containerId": "0b4787f0-7841-4bd0-b1f4-a4e2cc31ef80",
+            "name": "VerUsuarios",
+            "url": "localhost:3000/SalesManagement/v1/users/",
+            "method": "GET",
+            "sortNum": 10000,
+            "created": "2024-03-09T04:58:10.672Z",
+            "modified": "2024-03-09T04:58:10.672Z",
+            "headers": [],
+            "params": [],
+            "tests": []
+        },
+        {
+            "_id": "fabc8baf-a108-4d0a-8432-f9cf1ec087f7",
+            "colId": "b77c72a3-9076-4484-82ec-d032c39d78d2",
+            "containerId": "0b4787f0-7841-4bd0-b1f4-a4e2cc31ef80",
+            "name": "ModificarUsuario",
+            "url": "localhost:3000/SalesManagement/v1/users/65ebedf1b295dfe57e2d3d8e",
+            "method": "PUT",
+            "sortNum": 20000,
+            "created": "2024-03-09T04:58:10.666Z",
+            "modified": "2024-03-09T05:29:26.386Z",
+            "headers": [
+                {
+                    "name": "x-token",
+                    "value": ""
+                }
+            ],
+            "params": [],
+            "body": {
+                "type": "json",
+                "raw": "{\n  \"nombre\": \"Jeshua Rodriguez\",\n  \"correo\": \"jlopez@gmail.com\",\n  \"password\": \"123456\",\n  \"rol\": \"ADMIN_ROLE\"\n}",
+                "form": []
+            },
+            "reqType": "put",
+            "tests": []
+        },
+        {
+            "_id": "0e26ecad-3756-4363-9144-e6da0cbd5d55",
+            "colId": "b77c72a3-9076-4484-82ec-d032c39d78d2",
+            "containerId": "0b4787f0-7841-4bd0-b1f4-a4e2cc31ef80",
+            "name": "EliminarUsuarios",
+            "url": "localhost:3000/SalesManagement/v1/users/65ebee30b295dfe57e2d3d98",
+            "method": "DELETE",
+            "sortNum": 40000,
+            "created": "2024-03-09T04:58:10.667Z",
+            "modified": "2024-03-09T05:29:32.005Z",
+            "headers": [
+                {
+                    "name": "x-token",
+                    "value": ""
+                }
+            ],
+            "params": [],
+            "reqType": "del",
+            "tests": []
+        },
+        {
+            "_id": "69553e71-c18a-4624-b218-9592241c33f1",
+            "colId": "b77c72a3-9076-4484-82ec-d032c39d78d2",
+            "containerId": "3af6cebd-9ba5-4b71-b9c8-86eb5a6688c5",
+            "name": "AgregarCategoria",
+            "url": "localhost:3000/SalesManagement/v1/category/agregar",
+            "method": "POST",
+            "sortNum": 50000,
+            "created": "2024-03-09T04:58:10.668Z",
+            "modified": "2024-03-09T05:29:39.718Z",
+            "headers": [
+                {
+                    "name": "x-token",
+                    "value": ""
+                }
+            ],
+            "params": [],
+            "body": {
+                "type": "json",
+                "raw": "{\n  \"NombreCategoria\": \"Edjercicio\",\n  \"Descripcion\": \"Seccion para la salud\"\n}",
+                "form": []
+            },
+            "reqType": "post",
+            "tests": []
+        },
+        {
+            "_id": "7619ee62-99ee-4c42-822f-15d960ac9ec3",
+            "colId": "b77c72a3-9076-4484-82ec-d032c39d78d2",
+            "containerId": "3af6cebd-9ba5-4b71-b9c8-86eb5a6688c5",
+            "name": "VerCategorias",
+            "url": "localhost:3000/SalesManagement/v1/category/",
+            "method": "GET",
+            "sortNum": 57500,
+            "created": "2024-03-09T04:58:10.673Z",
+            "modified": "2024-03-09T04:58:10.673Z",
+            "headers": [],
+            "params": [],
+            "tests": []
+        },
+        {
+            "_id": "34486499-cda3-46e2-acfe-fe256c22c134",
+            "colId": "b77c72a3-9076-4484-82ec-d032c39d78d2",
+            "containerId": "3af6cebd-9ba5-4b71-b9c8-86eb5a6688c5",
+            "name": "EditarCategoria",
+            "url": "localhost:3000/SalesManagement/v1/category/editar/65ebeecfb295dfe57e2d3db8",
+            "method": "PUT",
+            "sortNum": 70000,
+            "created": "2024-03-09T04:58:10.669Z",
+            "modified": "2024-03-09T05:29:44.813Z",
+            "headers": [
+                {
+                    "name": "x-token",
+                    "value": ""
+                }
+            ],
+            "params": [],
+            "body": {
+                "type": "json",
+                "raw": "{\n  \"NombreCategoria\": \"Mascotas\",\n  \"Descripcion\": \"Seccion de accesorios domesticos\"\n}",
+                "form": []
+            },
+            "reqType": "put",
+            "tests": []
+        },
+        {
+            "_id": "34c478e9-d2ad-4581-94f0-c3e5c6a60d12",
+            "colId": "b77c72a3-9076-4484-82ec-d032c39d78d2",
+            "containerId": "3af6cebd-9ba5-4b71-b9c8-86eb5a6688c5",
+            "name": "EliminarCategoria",
+            "url": "localhost:3000/SalesManagement/v1/category/eliminar/65ebeeadb295dfe57e2d3dac",
+            "method": "DELETE",
+            "sortNum": 80000,
+            "created": "2024-03-09T04:58:10.670Z",
+            "modified": "2024-03-09T05:29:48.693Z",
+            "headers": [
+                {
+                    "name": "x-token",
+                    "value": ""
+                }
+            ],
+            "params": [],
+            "reqType": "del",
+            "tests": []
+        },
+        {
+            "_id": "1c685250-6035-48e0-9a23-8a866d7865a3",
+            "colId": "b77c72a3-9076-4484-82ec-d032c39d78d2",
+            "containerId": "530c4269-3c29-4c6c-a6a5-e4c09eaa9903",
+            "name": "AgregarProducto",
+            "url": "localhost:3000/SalesManagement/v1/product/agregar",
+            "method": "POST",
+            "sortNum": 90000,
+            "created": "2024-03-09T04:58:10.674Z",
+            "modified": "2024-03-09T05:13:02.089Z",
+            "headers": [
+                {
+                    "name": "x-token",
+                    "value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1aWQiOiI2NWViZWRmMWIyOTVkZmU1N2UyZDNkOGUiLCJpYXQiOjE3MDk5NjA3ODMsImV4cCI6MTcwOTk2NDM4M30.p9wxrXwTzaMC6IlK1ZvWYjJZ7_O0_76Cw6mUaFNsBFM"
+                }
+            ],
+            "params": [],
+            "body": {
+                "type": "json",
+                "raw": "{\n  \"NombreProducto\": \"Pelosta\",\n  \"Descripcion\": \"Pelota de hule\",\n  \"Precio\": 12.00,\n  \"Stock\": 0,\n  \"Categoria\": \"65ebeecfb295dfe57e2d3db8\"\n}",
+                "form": []
+            },
+            "reqType": "post",
+            "tests": []
+        },
+        {
+            "_id": "edd0cd9b-c578-4f82-ac14-ff920ee7eff2",
+            "colId": "b77c72a3-9076-4484-82ec-d032c39d78d2",
+            "containerId": "530c4269-3c29-4c6c-a6a5-e4c09eaa9903",
+            "name": "BuscarProducto",
+            "url": "localhost:3000/SalesManagement/v1/product/65ebef55b295dfe57e2d3dce",
+            "method": "GET",
+            "sortNum": 91250,
+            "created": "2024-03-09T04:58:10.676Z",
+            "modified": "2024-03-09T05:12:33.710Z",
+            "headers": [],
+            "params": [],
+            "reqType": "get",
+            "tests": []
+        },
+        {
+            "_id": "853d6cf2-8ef6-4365-9bcf-78be32aa16f8",
+            "colId": "b77c72a3-9076-4484-82ec-d032c39d78d2",
+            "containerId": "530c4269-3c29-4c6c-a6a5-e4c09eaa9903",
+            "name": "VerCatalogo",
+            "url": "localhost:3000/SalesManagement/v1/product/",
+            "method": "GET",
+            "sortNum": 92500,
+            "created": "2024-03-09T04:58:10.675Z",
+            "modified": "2024-03-09T04:58:10.675Z",
+            "headers": [],
+            "params": [],
+            "tests": []
+        },
+        {
+            "_id": "c8d92f5f-1db4-4675-86d7-c8d7cd5d6a9b",
+            "colId": "b77c72a3-9076-4484-82ec-d032c39d78d2",
+            "containerId": "530c4269-3c29-4c6c-a6a5-e4c09eaa9903",
+            "name": "ProductosAgotados",
+            "url": "localhost:3000/SalesManagement/v1/product/agotados",
+            "method": "GET",
+            "sortNum": 105000,
+            "created": "2024-03-09T04:58:10.679Z",
+            "modified": "2024-03-09T04:58:10.679Z",
+            "headers": [],
+            "params": [],
+            "tests": []
+        },
+        {
+            "_id": "b7b8fc68-bb69-40f1-8bbe-3e2325dd5ee8",
+            "colId": "b77c72a3-9076-4484-82ec-d032c39d78d2",
+            "containerId": "530c4269-3c29-4c6c-a6a5-e4c09eaa9903",
+            "name": "EditarProducto",
+            "url": "localhost:3000/SalesManagement/v1/product/65ebbafcfd889c47f0b17043",
+            "method": "PUT",
+            "sortNum": 120000,
+            "created": "2024-03-09T04:58:10.677Z",
+            "modified": "2024-03-09T05:12:51.865Z",
+            "headers": [
+                {
+                    "name": "x-token",
+                    "value": ""
+                }
+            ],
+            "params": [],
+            "body": {
+                "type": "json",
+                "raw": "{\n  \"NombreProducto\": \"Juego Mario Kart\",\n  \"Descripcion\": \"Juego Mario Kart para ps4\",\n  \"Precio\": 300.00,\n  \"Stock\": 10,\n  \"Categoria\": \"65ebb8ad02ddf8d1a57dfe9a\"\n}",
+                "form": []
+            },
+            "reqType": "put",
+            "tests": []
+        },
+        {
+            "_id": "8a19cb1c-6b34-418d-98a5-d4bd9a61d39c",
+            "colId": "b77c72a3-9076-4484-82ec-d032c39d78d2",
+            "containerId": "530c4269-3c29-4c6c-a6a5-e4c09eaa9903",
+            "name": "EliminarProducto",
+            "url": "localhost:3000/SalesManagement/v1/product/65ebefdeb295dfe57e2d3df3",
+            "method": "DELETE",
+            "sortNum": 130000,
+            "created": "2024-03-09T04:58:10.678Z",
+            "modified": "2024-03-09T05:13:23.808Z",
+            "headers": [
+                {
+                    "name": "x-token",
+                    "value": ""
+                }
+            ],
+            "params": [],
+            "reqType": "del",
+            "tests": []
+        },
+        {
+            "_id": "1b6d35b0-c498-442b-ae57-838ce31f57eb",
+            "colId": "b77c72a3-9076-4484-82ec-d032c39d78d2",
+            "containerId": "9d79b247-7da7-4f18-b56c-47102cfc4761",
+            "name": "VerFacturasId",
+            "url": "localhost:3000/SalesManagement/v1/receipt/facturas/65ebf1c059db92a3b4813c65",
+            "method": "GET",
+            "sortNum": 160000,
+            "created": "2024-03-09T04:58:10.681Z",
+            "modified": "2024-03-09T05:27:57.675Z",
+            "headers": [],
+            "params": [],
+            "reqType": "get",
+            "tests": []
+        },
+        {
+            "_id": "355add04-f27f-43e5-840d-9b93694ff761",
+            "colId": "b77c72a3-9076-4484-82ec-d032c39d78d2",
+            "containerId": "9d79b247-7da7-4f18-b56c-47102cfc4761",
+            "name": "EditarFactura",
+            "url": "localhost:3000/SalesManagement/v1/receipt/factura/65ebf2c3d8fee1dc24ae1006",
+            "method": "PUT",
+            "sortNum": 170000,
+            "created": "2024-03-09T04:58:10.682Z",
+            "modified": "2024-03-09T05:29:58.685Z",
+            "headers": [
+                {
+                    "name": "x-token",
+                    "value": ""
+                }
+            ],
+            "params": [],
+            "body": {
+                "type": "json",
+                "raw": "{\n  \"Direccion\": \"Mexico, Mexico\",\n  \"MetodoPago\": \"Efectivo\"\n}",
+                "form": []
+            },
+            "reqType": "put",
+            "tests": []
+        }
+    ]
+}

@@ -1,0 +1,70 @@
+[{
+  "_id": {
+    "$oid": "65ebef55b295dfe57e2d3dce"
+  },
+  "NombreProducto": "Mario Kart",
+  "Descripcion": "Juego de Mario Kart para ps4",
+  "Precio": 320,
+  "Stock": 10,
+  "Categoria": {
+    "$oid": "65ebeeadb295dfe57e2d3dac"
+  },
+  "estado": true,
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "65ebef73b295dfe57e2d3dd5"
+  },
+  "NombreProducto": "Frijoles",
+  "Descripcion": "Lata de frijoles de 20kg",
+  "Precio": 45,
+  "Stock": 5,
+  "Categoria": {
+    "$oid": "65ebeeb7b295dfe57e2d3db0"
+  },
+  "estado": true,
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "65ebef96b295dfe57e2d3ddc"
+  },
+  "NombreProducto": "Jabon Antibacterial",
+  "Descripcion": "Jabon antibacterial de 100ml",
+  "Precio": 30,
+  "Stock": 15,
+  "Categoria": {
+    "$oid": "65ebeec0b295dfe57e2d3db4"
+  },
+  "estado": true,
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "65ebefaeb295dfe57e2d3de3"
+  },
+  "NombreProducto": "Pelota",
+  "Descripcion": "Pelota de hule",
+  "Precio": 12,
+  "Stock": 0,
+  "Categoria": {
+    "$oid": "65ebeecfb295dfe57e2d3db8"
+  },
+  "estado": true,
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "65ebefdeb295dfe57e2d3df3"
+  },
+  "NombreProducto": "Pelosta",
+  "Descripcion": "Pelota de hule",
+  "Precio": 12,
+  "Stock": 0,
+  "Categoria": {
+    "$oid": "65ebeecfb295dfe57e2d3db8"
+  },
+  "estado": false,
+  "__v": 0
+}]

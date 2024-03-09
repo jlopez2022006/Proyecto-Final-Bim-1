@@ -105,12 +105,12 @@ export const usuariosDelete = async (req = request, res = response) => {
 
 export const usuariosDelete2 = async (req = request, res = response) => {
     const { id } = req.params;
-    const { oldPassword } = req.body;
+    const { Password } = req.body;
 
     try {
-        if (!oldPassword) {
+        if (!Password) {
             return res.status(400).json({
-                msg: 'Debe proporcionar el antiguo password para eliminar el perfil',
+                msg: 'Debe proporcionar el password para eliminar el perfil',
             });
         }
 
@@ -121,9 +121,9 @@ export const usuariosDelete2 = async (req = request, res = response) => {
             });
         }
 
-        if (!bcryptjs.compareSync(oldPassword, usuario.password)) {
+        if (!bcryptjs.compareSync(Password, usuario.password)) {
             return res.status(400).json({
-                msg: 'La contraseña anterior no es válida',
+                msg: 'La contraseña no es válida',
             });
         }
 

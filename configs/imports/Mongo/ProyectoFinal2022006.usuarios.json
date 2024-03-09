@@ -1,0 +1,24 @@
+[{
+  "_id": {
+    "$oid": "65ebedf1b295dfe57e2d3d8e"
+  },
+  "nombre": "Jeshua Rodriguez",
+  "correo": "jlopez@gmail.com",
+  "password": "$2a$10$WAAvRed.XbeQlANhRB6c6.ihWHVKgIav0JOzZm.SVYccI5U69sFqS",
+  "rol": "ADMIN_ROLE",
+  "estado": true,
+  "carrito": [],
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "65ebee6eb295dfe57e2d3da4"
+  },
+  "nombre": "Pedro Lopez",
+  "correo": "plopez@gmail.com",
+  "password": "$2a$10$3qdxY.u0eK31wePZyy2AT.FXHx7dSJsIJ9j62MjqCHoNv8oAibEgO",
+  "rol": "CLIENT_ROLE",
+  "estado": true,
+  "carrito": [],
+  "__v": 0
+}]
