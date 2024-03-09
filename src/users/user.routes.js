@@ -6,6 +6,8 @@ import {
     usuariosPut,
     usuariosDelete,
     usuariosPost2,
+    usuariosPut2,
+    usuariosDelete2,
 } from "./user.controller.js";
 
 import {
@@ -49,12 +51,24 @@ router.post(
 router.put(
     "/:id",
     [
+        validarJWT,
+        tieneRole('ADMIN_ROLE'),
         check("id", "It is not a valid ID").isMongoId(),
         check("id").custom(existeUsuarioById),
         check("rol"),
         validarCampos
     ],
     usuariosPut
+);
+
+router.put(
+    "/editarPerfil/:id",
+    [
+        check("id", "It is not a valid ID").isMongoId(),
+        check("id").custom(existeUsuarioById),
+        validarCampos
+    ],
+    usuariosPut2
 );
 
 
@@ -70,7 +84,15 @@ router.delete(
     usuariosDelete
 );
 
-
+router.delete(
+    "/eliminarPerfil/:id",
+    [
+        check("id", "No es un ID válido").isMongoId(),
+        check("id").custom(existeUsuarioById),
+        validarCampos
+    ],
+    usuariosDelete2
+);
 
 export default router;
 

@@ -1,7 +1,7 @@
 {
     "client": "Thunder Client",
     "collectionName": "ADMINISTRADOR",
-    "dateExported": "2024-03-09T01:03:43.773Z",
+    "dateExported": "2024-03-09T02:07:38.205Z",
     "version": "1.1",
     "folders": [
         {
@@ -65,18 +65,24 @@
             "colId": "dffeb327-ed8d-47e9-8acc-84571e53ce77",
             "containerId": "711a8262-c21e-4695-96c1-c78273ec3de7",
             "name": "ModificarUsuario",
-            "url": "localhost:3000/SalesManagement/v1/users/65e9365e6fd38b3ebfbd1988",
+            "url": "localhost:3000/SalesManagement/v1/users/65ebb5cde42ee36cd2f9e52c",
             "method": "PUT",
             "sortNum": 20000,
             "created": "2024-03-08T20:08:15.052Z",
-            "modified": "2024-03-08T20:08:15.052Z",
-            "headers": [],
+            "modified": "2024-03-09T01:15:23.958Z",
+            "headers": [
+                {
+                    "name": "x-token",
+                    "value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1aWQiOiI2NWViYjVjZGU0MmVlMzZjZDJmOWU1MmMiLCJpYXQiOjE3MDk5NDY4MDcsImV4cCI6MTcwOTk1MDQwN30._Qzgrfg-FOkgZOL3JWngXcj8xF7VUL2Q05glV9_RovA"
+                }
+            ],
             "params": [],
             "body": {
                 "type": "json",
-                "raw": "{\n  \"nombre\": \"Pedro Lopez\",\n  \"correo\": \"plopez@gmail.com\",\n  \"password\": \"123456\",\n  \"rol\": \"ADMIN_ROLE\"\n}",
+                "raw": "{\n  \"nombre\": \"Jeshua Rodriguez\",\n  \"correo\": \"jlopez@gmail.com\",\n  \"password\": \"123456\",\n  \"rol\": \"ADMIN_ROLE\"\n}",
                 "form": []
             },
+            "reqType": "put",
             "tests": []
         },
         {
@@ -84,18 +90,19 @@
             "colId": "dffeb327-ed8d-47e9-8acc-84571e53ce77",
             "containerId": "711a8262-c21e-4695-96c1-c78273ec3de7",
             "name": "EliminarUsuarios",
-            "url": "localhost:3000/SalesManagement/v1/users/65e9365e6fd38b3ebfbd1988",
+            "url": "localhost:3000/SalesManagement/v1/users/65ebb83a02ddf8d1a57dfe8f",
             "method": "DELETE",
             "sortNum": 40000,
             "created": "2024-03-08T20:08:15.054Z",
-            "modified": "2024-03-08T20:08:15.054Z",
+            "modified": "2024-03-09T01:16:08.266Z",
             "headers": [
                 {
                     "name": "x-token",
-                    "value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1aWQiOiI2NWU5MzY1YTZmZDM4YjNlYmZiZDE5ODUiLCJpYXQiOjE3MDk3ODM1MTEsImV4cCI6MTcwOTc4NzExMX0.-Lcyil2vOzhyDWp1RbDN2O2qVdHXLZSkvgoEBfxqds0"
+                    "value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1aWQiOiI2NWViYjVjZGU0MmVlMzZjZDJmOWU1MmMiLCJpYXQiOjE3MDk5NDY4MDcsImV4cCI6MTcwOTk1MDQwN30._Qzgrfg-FOkgZOL3JWngXcj8xF7VUL2Q05glV9_RovA"
                 }
             ],
             "params": [],
+            "reqType": "del",
             "tests": []
         },
         {
@@ -107,17 +114,17 @@
             "method": "POST",
             "sortNum": 50000,
             "created": "2024-03-08T20:08:15.055Z",
-            "modified": "2024-03-08T23:44:00.094Z",
+            "modified": "2024-03-09T01:23:44.510Z",
             "headers": [
                 {
                     "name": "x-token",
-                    "value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1aWQiOiI2NWViYTI5MmQyOTNhYmFhMWMxZjJlNDIiLCJpYXQiOjE3MDk5NDE0MTQsImV4cCI6MTcwOTk0NTAxNH0.OTw8q7nVvjWZwHjqm9RlXp2wc6FSZXieLYqGdr71u8Q"
+                    "value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1aWQiOiI2NWViYjVjZGU0MmVlMzZjZDJmOWU1MmMiLCJpYXQiOjE3MDk5NDY4MDcsImV4cCI6MTcwOTk1MDQwN30._Qzgrfg-FOkgZOL3JWngXcj8xF7VUL2Q05glV9_RovA"
                 }
             ],
             "params": [],
             "body": {
                 "type": "json",
-                "raw": "{\n  \"NombreCategoria\": \"Comida\",\n  \"Descripcion\": \"Seccion para entretenimiento\"\n}",
+                "raw": "{\n  \"NombreCategoria\": \"Categoria predefinida\",\n  \"Descripcion\": \"Categoria Predefinida\"\n}",
                 "form": []
             },
             "reqType": "post",
@@ -142,23 +149,24 @@
             "colId": "dffeb327-ed8d-47e9-8acc-84571e53ce77",
             "containerId": "ae6efeb6-b70f-4660-9ab1-f45ba482c2b7",
             "name": "EditarCategoria",
-            "url": "localhost:3000/SalesManagement/v1/category/editar/65ea7259cfa15d1976d54276",
+            "url": "localhost:3000/SalesManagement/v1/category/editar/65ebb9b6fd889c47f0b17011",
             "method": "PUT",
             "sortNum": 70000,
             "created": "2024-03-08T20:08:15.056Z",
-            "modified": "2024-03-08T20:08:15.056Z",
+            "modified": "2024-03-09T01:22:33.820Z",
             "headers": [
                 {
                     "name": "x-token",
-                    "value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1aWQiOiI2NWVhNmVlMDM3YWZmMTEzNmJkYzdmYWIiLCJpYXQiOjE3MDk4NjcyNjMsImV4cCI6MTcwOTg3MDg2M30.RhYXB2LJxio9KBBJxReE1pD4bVjrTbj6CPSIu-hQqoM"
+                    "value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1aWQiOiI2NWViYjVjZGU0MmVlMzZjZDJmOWU1MmMiLCJpYXQiOjE3MDk5NDY4MDcsImV4cCI6MTcwOTk1MDQwN30._Qzgrfg-FOkgZOL3JWngXcj8xF7VUL2Q05glV9_RovA"
                 }
             ],
             "params": [],
             "body": {
                 "type": "json",
-                "raw": "{\n  \"NombreCategoria\": \"Juegos\",\n  \"Descripcion\": \"Seccion para videojuegos y entretenimiento\"\n}",
+                "raw": "{\n  \"NombreCategoria\": \"Comida\",\n  \"Descripcion\": \"Seccion de alimentos\"\n}",
                 "form": []
             },
+            "reqType": "put",
             "tests": []
         },
         {
@@ -166,18 +174,19 @@
             "colId": "dffeb327-ed8d-47e9-8acc-84571e53ce77",
             "containerId": "ae6efeb6-b70f-4660-9ab1-f45ba482c2b7",
             "name": "EliminarCategoria",
-            "url": "localhost:3000/SalesManagement/v1/category/eliminar/65eb0e576d780a09e49c0772",
+            "url": "localhost:3000/SalesManagement/v1/category/eliminar/65ebba17fd889c47f0b17023",
             "method": "DELETE",
             "sortNum": 80000,
             "created": "2024-03-08T20:08:15.057Z",
-            "modified": "2024-03-08T20:08:15.057Z",
+            "modified": "2024-03-09T01:24:04.350Z",
             "headers": [
                 {
                     "name": "x-token",
-                    "value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1aWQiOiI2NWViMGUyYzZkNzgwYTA5ZTQ5YzA3NjkiLCJpYXQiOjE3MDk5MDg0MTgsImV4cCI6MTcwOTkxMjAxOH0.WBqTvSeh3dFWtTWF9fyIcNhHEZY8mCHIlPcYcBBjOao"
+                    "value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1aWQiOiI2NWViYjVjZGU0MmVlMzZjZDJmOWU1MmMiLCJpYXQiOjE3MDk5NDY4MDcsImV4cCI6MTcwOTk1MDQwN30._Qzgrfg-FOkgZOL3JWngXcj8xF7VUL2Q05glV9_RovA"
                 }
             ],
             "params": [],
+            "reqType": "del",
             "tests": []
         },
         {
@@ -189,17 +198,17 @@
             "method": "POST",
             "sortNum": 90000,
             "created": "2024-03-08T20:08:15.061Z",
-            "modified": "2024-03-08T23:44:59.839Z",
+            "modified": "2024-03-09T01:28:45.270Z",
             "headers": [
                 {
                     "name": "x-token",
-                    "value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1aWQiOiI2NWViYTI5MmQyOTNhYmFhMWMxZjJlNDIiLCJpYXQiOjE3MDk5NDE0MTQsImV4cCI6MTcwOTk0NTAxNH0.OTw8q7nVvjWZwHjqm9RlXp2wc6FSZXieLYqGdr71u8Q"
+                    "value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1aWQiOiI2NWViYjVjZGU0MmVlMzZjZDJmOWU1MmMiLCJpYXQiOjE3MDk5NDY4MDcsImV4cCI6MTcwOTk1MDQwN30._Qzgrfg-FOkgZOL3JWngXcj8xF7VUL2Q05glV9_RovA"
                 }
             ],
             "params": [],
             "body": {
                 "type": "json",
-                "raw": "{\n  \"NombreProducto\": \"Pasta Dental\",\n  \"Descripcion\": \"Juego de Mario Kart para ps4\",\n  \"Precio\": 250.00,\n  \"Stock\": 10,\n  \"Categoria\": \"65eba2b9d293abaa1c1f2e4b\"\n}",
+                "raw": "{\n  \"NombreProducto\": \"Frijoles\",\n  \"Descripcion\": \"Lata de frijol de 20kg\",\n  \"Precio\": 120.00,\n  \"Stock\": 15,\n  \"Categoria\": \"65ebb9b6fd889c47f0b17011\"\n}",
                 "form": []
             },
             "reqType": "post",
@@ -212,7 +221,7 @@
             "name": "VerCatalogo",
             "url": "localhost:3000/SalesManagement/v1/product/",
             "method": "GET",
-            "sortNum": 100000,
+            "sortNum": 92500,
             "created": "2024-03-08T20:08:15.062Z",
             "modified": "2024-03-08T20:08:15.062Z",
             "headers": [],
@@ -224,11 +233,11 @@
             "colId": "dffeb327-ed8d-47e9-8acc-84571e53ce77",
             "containerId": "46988aa7-f38e-44f1-bfde-21529e3aeb06",
             "name": "BuscarProducto",
-            "url": "localhost:3000/SalesManagement/v1/product/65eb721a4835dbeec73efef7",
+            "url": "localhost:3000/SalesManagement/v1/product/65ebbb4dfd889c47f0b17051",
             "method": "GET",
-            "sortNum": 102500,
+            "sortNum": 95000,
             "created": "2024-03-08T20:08:15.063Z",
-            "modified": "2024-03-08T20:17:26.252Z",
+            "modified": "2024-03-09T01:29:44.915Z",
             "headers": [],
             "params": [],
             "reqType": "get",
@@ -253,23 +262,24 @@
             "colId": "dffeb327-ed8d-47e9-8acc-84571e53ce77",
             "containerId": "46988aa7-f38e-44f1-bfde-21529e3aeb06",
             "name": "EditarProducto",
-            "url": "localhost:3000/SalesManagement/v1/product/65eaac1e1c27d09c9b0ddcf2",
+            "url": "localhost:3000/SalesManagement/v1/product/65ebbafcfd889c47f0b17043",
             "method": "PUT",
             "sortNum": 120000,
             "created": "2024-03-08T20:08:15.064Z",
-            "modified": "2024-03-08T20:08:15.064Z",
+            "modified": "2024-03-09T01:31:05.748Z",
             "headers": [
                 {
                     "name": "x-token",
-                    "value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1aWQiOiI2NWVhYWI3YjFjMjdkMDljOWIwZGRjZDQiLCJpYXQiOjE3MDk4NzgxODcsImV4cCI6MTcwOTg4MTc4N30.UE5bQLsrIWXY7wYeB8G0sRNTCXva4ZU5SchVXAU6UDo"
+                    "value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1aWQiOiI2NWViYjVjZGU0MmVlMzZjZDJmOWU1MmMiLCJpYXQiOjE3MDk5NDY4MDcsImV4cCI6MTcwOTk1MDQwN30._Qzgrfg-FOkgZOL3JWngXcj8xF7VUL2Q05glV9_RovA"
                 }
             ],
             "params": [],
             "body": {
                 "type": "json",
-                "raw": "{\n  \"NombreProducto\": \"Control de PS4\",\n  \"Descripcion\": \"Control para jugar tu ps4\",\n  \"Precio\": 300.00,\n  \"Stock\": 0,\n  \"Categoria\": \"65eaabc21c27d09c9b0ddce3\"\n}",
+                "raw": "{\n  \"NombreProducto\": \"Juego Mario Kart\",\n  \"Descripcion\": \"Juego Mario Kart para ps4\",\n  \"Precio\": 300.00,\n  \"Stock\": 10,\n  \"Categoria\": \"65ebb8ad02ddf8d1a57dfe9a\"\n}",
                 "form": []
             },
+            "reqType": "put",
             "tests": []
         },
         {
@@ -277,18 +287,19 @@
             "colId": "dffeb327-ed8d-47e9-8acc-84571e53ce77",
             "containerId": "46988aa7-f38e-44f1-bfde-21529e3aeb06",
             "name": "EliminarProducto",
-            "url": "localhost:3000/SalesManagement/v1/product/65eaabf71c27d09c9b0ddce9",
+            "url": "localhost:3000/SalesManagement/v1/product/65ebbb4dfd889c47f0b17051",
             "method": "DELETE",
             "sortNum": 130000,
             "created": "2024-03-08T20:08:15.065Z",
-            "modified": "2024-03-08T20:08:15.065Z",
+            "modified": "2024-03-09T01:31:40.741Z",
             "headers": [
                 {
                     "name": "x-token",
-                    "value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1aWQiOiI2NWVhYWI3YjFjMjdkMDljOWIwZGRjZDQiLCJpYXQiOjE3MDk4NzgxODcsImV4cCI6MTcwOTg4MTc4N30.UE5bQLsrIWXY7wYeB8G0sRNTCXva4ZU5SchVXAU6UDo"
+                    "value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1aWQiOiI2NWViYjVjZGU0MmVlMzZjZDJmOWU1MmMiLCJpYXQiOjE3MDk5NDY4MDcsImV4cCI6MTcwOTk1MDQwN30._Qzgrfg-FOkgZOL3JWngXcj8xF7VUL2Q05glV9_RovA"
                 }
             ],
             "params": [],
+            "reqType": "del",
             "tests": []
         }
     ]

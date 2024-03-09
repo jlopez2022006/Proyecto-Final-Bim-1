@@ -1,0 +1,49 @@
+{
+    "client": "Thunder Client",
+    "collectionName": "LOGIN",
+    "dateExported": "2024-03-09T02:07:55.805Z",
+    "version": "1.1",
+    "folders": [],
+    "requests": [
+        {
+            "_id": "896b6328-b846-4311-926f-f5865fef144d",
+            "colId": "34ea332f-926e-4d89-856b-c7de98c62520",
+            "containerId": "",
+            "name": "Registrar",
+            "url": "localhost:3000/SalesManagement/v1/users/agregarCliente",
+            "method": "POST",
+            "sortNum": 5000,
+            "created": "2024-03-09T01:59:52.365Z",
+            "modified": "2024-03-09T01:59:52.365Z",
+            "headers": [],
+            "params": [],
+            "body": {
+                "type": "json",
+                "raw": "{\n  \"nombre\": \"Pedro Lopez\",\n  \"correo\": \"plopez@gmail.com\",\n  \"password\": \"123456\"\n}",
+                "form": []
+            },
+            "reqType": "post",
+            "tests": []
+        },
+        {
+            "_id": "e7147424-38c9-481b-ba0c-e9f2c88c1f0a",
+            "colId": "34ea332f-926e-4d89-856b-c7de98c62520",
+            "containerId": "",
+            "name": "Login",
+            "url": "localhost:3000/SalesManagement/v1/auth/login",
+            "method": "POST",
+            "sortNum": 10000,
+            "created": "2024-03-09T01:07:15.268Z",
+            "modified": "2024-03-09T01:32:44.292Z",
+            "headers": [],
+            "params": [],
+            "body": {
+                "type": "json",
+                "raw": "{\n  \"correo\": \"plopez@gmail.com\",\n  \"password\": \"123456\"\n}",
+                "form": []
+            },
+            "reqType": "post",
+            "tests": []
+        }
+    ]
+}

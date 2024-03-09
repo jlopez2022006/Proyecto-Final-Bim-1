@@ -1,16 +1,9 @@
 {
     "client": "Thunder Client",
     "collectionName": "CLIENTE",
-    "dateExported": "2024-03-09T01:03:50.228Z",
+    "dateExported": "2024-03-09T02:07:48.925Z",
     "version": "1.1",
     "folders": [
-        {
-            "_id": "e9b74d73-67a7-434c-aa65-4584affe228e",
-            "name": "Login",
-            "containerId": "",
-            "created": "2024-03-08T20:08:15.077Z",
-            "sortNum": 10000
-        },
         {
             "_id": "aec2893d-85d5-4262-938f-0adf333c843c",
             "name": "Perfil",
@@ -42,26 +35,6 @@
     ],
     "requests": [
         {
-            "_id": "896b6328-b846-4311-926f-f5865fef144d",
-            "colId": "804ec82e-5679-4507-a38f-645261daf6b6",
-            "containerId": "e9b74d73-67a7-434c-aa65-4584affe228e",
-            "name": "Registrar",
-            "url": "localhost:3000/SalesManagement/v1/users/agregarCliente",
-            "method": "POST",
-            "sortNum": 5000,
-            "created": "2024-03-08T20:08:15.080Z",
-            "modified": "2024-03-08T23:47:18.590Z",
-            "headers": [],
-            "params": [],
-            "body": {
-                "type": "json",
-                "raw": "{\n  \"nombre\": \"Pedro Lopez\",\n  \"correo\": \"plopez@gmail.com\",\n  \"password\": \"123456\"\n}",
-                "form": []
-            },
-            "reqType": "post",
-            "tests": []
-        },
-        {
             "_id": "0627ef22-8d79-4224-93ac-dd50f89df545",
             "colId": "804ec82e-5679-4507-a38f-645261daf6b6",
             "containerId": "1bb4aefc-8acc-4e8c-9c2b-4c74538079c5",
@@ -76,20 +49,20 @@
             "tests": []
         },
         {
-            "_id": "e7147424-38c9-481b-ba0c-e9f2c88c1f0a",
+            "_id": "071e613f-0433-4288-930f-20565bc2ef84",
             "colId": "804ec82e-5679-4507-a38f-645261daf6b6",
-            "containerId": "e9b74d73-67a7-434c-aa65-4584affe228e",
-            "name": "Login",
-            "url": "localhost:3000/SalesManagement/v1/auth/login",
+            "containerId": "1bb4aefc-8acc-4e8c-9c2b-4c74538079c5",
+            "name": "BuscarProducto",
+            "url": "localhost:3000/SalesManagement/v1/product/buscar",
             "method": "POST",
-            "sortNum": 10000,
-            "created": "2024-03-08T20:08:15.077Z",
-            "modified": "2024-03-09T00:48:52.848Z",
+            "sortNum": 15000,
+            "created": "2024-03-08T20:08:15.081Z",
+            "modified": "2024-03-09T01:46:01.233Z",
             "headers": [],
             "params": [],
             "body": {
                 "type": "json",
-                "raw": "{\n  \"correo\": \"plopez@gmail.com\",\n  \"password\": \"123456\"\n}",
+                "raw": "{\n    \"NombreProducto\": \"Jabon Liquido\"\n}",
                 "form": []
             },
             "reqType": "post",
@@ -100,13 +73,19 @@
             "colId": "804ec82e-5679-4507-a38f-645261daf6b6",
             "containerId": "aec2893d-85d5-4262-938f-0adf333c843c",
             "name": "EditarPerfil",
-            "url": "",
+            "url": "localhost:3000/SalesManagement/v1/users/editarPerfil/65ebbc21fd889c47f0b1706b",
             "method": "PUT",
             "sortNum": 20000,
             "created": "2024-03-08T20:08:15.078Z",
-            "modified": "2024-03-08T20:08:15.078Z",
+            "modified": "2024-03-09T01:38:16.691Z",
             "headers": [],
             "params": [],
+            "body": {
+                "type": "json",
+                "raw": "{\n  \"nombre\": \"Pedro Lopez\",\n  \"correo\": \"plopez@gmail.com\",\n  \"oldPassword\": \"111111\",\n  \"password\": \"123456\"\n}",
+                "form": []
+            },
+            "reqType": "put",
             "tests": []
         },
         {
@@ -118,12 +97,12 @@
             "method": "POST",
             "sortNum": 25000,
             "created": "2024-03-08T20:08:15.083Z",
-            "modified": "2024-03-08T20:21:59.895Z",
+            "modified": "2024-03-09T01:45:34.401Z",
             "headers": [],
             "params": [],
             "body": {
                 "type": "json",
-                "raw": "{\n  \"NombreCategoria\": \"Videojuegos\"\n}",
+                "raw": "{\n  \"NombreCategoria\": \"Limpieza\"\n}",
                 "form": []
             },
             "reqType": "post",
@@ -134,33 +113,19 @@
             "colId": "804ec82e-5679-4507-a38f-645261daf6b6",
             "containerId": "aec2893d-85d5-4262-938f-0adf333c843c",
             "name": "EliminarCuenta",
-            "url": "",
+            "url": "localhost:3000/SalesManagement/v1/users/eliminarPerfil/65ebbc21fd889c47f0b1706b",
             "method": "DELETE",
             "sortNum": 30000,
             "created": "2024-03-08T20:08:15.079Z",
-            "modified": "2024-03-08T20:08:15.079Z",
-            "headers": [],
-            "params": [],
-            "tests": []
-        },
-        {
-            "_id": "071e613f-0433-4288-930f-20565bc2ef84",
-            "colId": "804ec82e-5679-4507-a38f-645261daf6b6",
-            "containerId": "1bb4aefc-8acc-4e8c-9c2b-4c74538079c5",
-            "name": "BuscarProducto",
-            "url": "localhost:3000/SalesManagement/v1/product/buscar",
-            "method": "POST",
-            "sortNum": 40000,
-            "created": "2024-03-08T20:08:15.081Z",
-            "modified": "2024-03-08T20:22:35.152Z",
+            "modified": "2024-03-09T01:43:03.825Z",
             "headers": [],
             "params": [],
             "body": {
                 "type": "json",
-                "raw": "{\n    \"NombreProducto\": \"Control ps4\"\n}",
+                "raw": "{\n  \"oldPassword\": \"\"\n}",
                 "form": []
             },
-            "reqType": "post",
+            "reqType": "del",
             "tests": []
         },
         {
@@ -168,16 +133,16 @@
             "colId": "804ec82e-5679-4507-a38f-645261daf6b6",
             "containerId": "ee6c04bf-6628-4b52-91ad-7eef6e733cc8",
             "name": "AgregarProductoCarrito",
-            "url": "localhost:3000/SalesManagement/v1/cart/agregar-producto-carrito/65eba386d293abaa1c1f2e7d",
+            "url": "localhost:3000/SalesManagement/v1/cart/agregar-producto-carrito/65ebbf1c9439cdffe8be828c",
             "method": "POST",
             "sortNum": 50000,
             "created": "2024-03-08T20:08:15.084Z",
-            "modified": "2024-03-08T23:49:45.388Z",
+            "modified": "2024-03-09T01:48:45.375Z",
             "headers": [],
             "params": [],
             "body": {
                 "type": "json",
-                "raw": "{\n    \"productoId\": \"65eba2efd293abaa1c1f2e5c\"\n}",
+                "raw": "{\n    \"productoId\": \"65ebbafcfd889c47f0b17043\"\n}",
                 "form": []
             },
             "reqType": "post",
@@ -192,11 +157,11 @@
             "method": "GET",
             "sortNum": 60000,
             "created": "2024-03-08T20:08:15.085Z",
-            "modified": "2024-03-08T23:47:58.051Z",
+            "modified": "2024-03-09T01:49:45.276Z",
             "headers": [
                 {
                     "name": "x-token",
-                    "value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1aWQiOiI2NWViYTM4NmQyOTNhYmFhMWMxZjJlN2QiLCJpYXQiOjE3MDk5NDE2NDQsImV4cCI6MTcwOTk0NTI0NH0.j4C9cSR1jbYNDJglgFMTFXFGAoCn7pFTP1Xkb1siYII"
+                    "value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1aWQiOiI2NWViYmYxYzk0MzljZGZmZThiZTgyOGMiLCJpYXQiOjE3MDk5NDg5NzYsImV4cCI6MTcwOTk1MjU3Nn0.XZVDD9HKPcgoO9qkABh6tO4-Mefm82lrAE7-LqLRvt4"
                 }
             ],
             "params": [],
@@ -212,12 +177,12 @@
             "method": "POST",
             "sortNum": 70000,
             "created": "2024-03-08T21:22:04.014Z",
-            "modified": "2024-03-09T00:49:19.905Z",
+            "modified": "2024-03-09T01:53:19.428Z",
             "headers": [],
             "params": [],
             "body": {
                 "type": "json",
-                "raw": "{\n  \"idUsuario\": \"65eba386d293abaa1c1f2e7d\",\n  \"estado\": true\n}",
+                "raw": "{\n  \"idUsuario\": \"65ebbf1c9439cdffe8be828c\"\n}",
                 "form": []
             },
             "reqType": "post",
@@ -232,11 +197,11 @@
             "method": "GET",
             "sortNum": 80000,
             "created": "2024-03-08T21:56:30.812Z",
-            "modified": "2024-03-09T00:49:05.479Z",
+            "modified": "2024-03-09T01:53:57.358Z",
             "headers": [
                 {
                     "name": "x-token",
-                    "value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1aWQiOiI2NWViYTM4NmQyOTNhYmFhMWMxZjJlN2QiLCJpYXQiOjE3MDk5NDUzMzIsImV4cCI6MTcwOTk0ODkzMn0.Gx_jNtG-x8ALNgRVagJqSh350vCUjMTMFvpXTPtSkRk"
+                    "value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1aWQiOiI2NWViYmYxYzk0MzljZGZmZThiZTgyOGMiLCJpYXQiOjE3MDk5NDkxMjAsImV4cCI6MTcwOTk1MjcyMH0.LwFqKCRXALtNv6OD2I1kS5UgAPaZz6Kud3AWbNi3IEc"
                 }
             ],
             "params": [],
