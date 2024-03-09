@@ -1,7 +1,7 @@
 {
     "client": "Thunder Client",
     "collectionName": "CLIENTE",
-    "dateExported": "2024-03-09T02:07:48.925Z",
+    "dateExported": "2024-03-09T04:52:15.580Z",
     "version": "1.1",
     "folders": [
         {
@@ -57,12 +57,12 @@
             "method": "POST",
             "sortNum": 15000,
             "created": "2024-03-08T20:08:15.081Z",
-            "modified": "2024-03-09T01:46:01.233Z",
+            "modified": "2024-03-09T02:46:24.083Z",
             "headers": [],
             "params": [],
             "body": {
                 "type": "json",
-                "raw": "{\n    \"NombreProducto\": \"Jabon Liquido\"\n}",
+                "raw": "{\n    \"NombreProducto\": \"Pasta Dental\"\n}",
                 "form": []
             },
             "reqType": "post",
@@ -133,16 +133,16 @@
             "colId": "804ec82e-5679-4507-a38f-645261daf6b6",
             "containerId": "ee6c04bf-6628-4b52-91ad-7eef6e733cc8",
             "name": "AgregarProductoCarrito",
-            "url": "localhost:3000/SalesManagement/v1/cart/agregar-producto-carrito/65ebbf1c9439cdffe8be828c",
+            "url": "localhost:3000/SalesManagement/v1/cart/agregar-producto-carrito/65ebe4be8f8664656d1a6e7a",
             "method": "POST",
             "sortNum": 50000,
             "created": "2024-03-08T20:08:15.084Z",
-            "modified": "2024-03-09T01:48:45.375Z",
+            "modified": "2024-03-09T04:26:07.957Z",
             "headers": [],
             "params": [],
             "body": {
                 "type": "json",
-                "raw": "{\n    \"productoId\": \"65ebbafcfd889c47f0b17043\"\n}",
+                "raw": "{\n    \"productoId\": \"65ebe4328f8664656d1a6e72\"\n}",
                 "form": []
             },
             "reqType": "post",
@@ -157,11 +157,11 @@
             "method": "GET",
             "sortNum": 60000,
             "created": "2024-03-08T20:08:15.085Z",
-            "modified": "2024-03-09T01:49:45.276Z",
+            "modified": "2024-03-09T03:03:46.982Z",
             "headers": [
                 {
                     "name": "x-token",
-                    "value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1aWQiOiI2NWViYmYxYzk0MzljZGZmZThiZTgyOGMiLCJpYXQiOjE3MDk5NDg5NzYsImV4cCI6MTcwOTk1MjU3Nn0.XZVDD9HKPcgoO9qkABh6tO4-Mefm82lrAE7-LqLRvt4"
+                    "value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1aWQiOiI2NWViYmYxYzk0MzljZGZmZThiZTgyOGMiLCJpYXQiOjE3MDk5NTMxNjMsImV4cCI6MTcwOTk1Njc2M30.UKz_ZL605C9QdR0n9gs5kxlZlUV9M1lIbp6hI0AqVD0"
                 }
             ],
             "params": [],
@@ -177,12 +177,12 @@
             "method": "POST",
             "sortNum": 70000,
             "created": "2024-03-08T21:22:04.014Z",
-            "modified": "2024-03-09T01:53:19.428Z",
+            "modified": "2024-03-09T04:36:00.071Z",
             "headers": [],
             "params": [],
             "body": {
                 "type": "json",
-                "raw": "{\n  \"idUsuario\": \"65ebbf1c9439cdffe8be828c\"\n}",
+                "raw": "{\r\n  \"idUsuario\": \"65ebe4be8f8664656d1a6e7a\",\r\n  \"Direccion\": \"123 Calle Principal, Ciudad, País\",\r\n  \"MetodoPago\": \"Tarjeta de crédito\"\r\n}",
                 "form": []
             },
             "reqType": "post",
@@ -197,11 +197,11 @@
             "method": "GET",
             "sortNum": 80000,
             "created": "2024-03-08T21:56:30.812Z",
-            "modified": "2024-03-09T01:53:57.358Z",
+            "modified": "2024-03-09T04:35:38.860Z",
             "headers": [
                 {
                     "name": "x-token",
-                    "value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1aWQiOiI2NWViYmYxYzk0MzljZGZmZThiZTgyOGMiLCJpYXQiOjE3MDk5NDkxMjAsImV4cCI6MTcwOTk1MjcyMH0.LwFqKCRXALtNv6OD2I1kS5UgAPaZz6Kud3AWbNi3IEc"
+                    "value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1aWQiOiI2NWViZTRiZThmODY2NDY1NmQxYTZlN2EiLCJpYXQiOjE3MDk5NTgzMzYsImV4cCI6MTcwOTk2MTkzNn0.84CHj4ecSuKJiBpe5o7Pn6pU6HZ-z8KCYmjRjahb3QU"
                 }
             ],
             "params": [],

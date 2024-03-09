@@ -9,6 +9,10 @@ const FacturaSchema = mongoose.Schema({
         type: Date,
         default: Date.now
     },
+    Direccion: {
+        type: String,
+        required: true
+    },
     idUsuario: {
         type: mongoose.Schema.Types.ObjectId,
         ref: 'Usuario', // Referencia al modelo Usuario
@@ -26,6 +30,10 @@ const FacturaSchema = mongoose.Schema({
         type: Number,
         default: 0
     },
+    MetodoPago: {
+        type: String,
+        required: true
+    },
     estado: {
         type: Boolean,
         default: true,
@@ -35,10 +43,7 @@ const FacturaSchema = mongoose.Schema({
 
 FacturaSchema.pre('save', async function (next) {
     try {
-        // Obtener el número total de facturas en la base de datos
         const totalFacturas = await this.constructor.countDocuments();
-
-        // Generar el próximo código de factura (ejemplo: 0001, 0002, ...)
         this.codigoFactura = `${totalFacturas + 1}`.padStart(4, '0');
         next();
     } catch (error) {

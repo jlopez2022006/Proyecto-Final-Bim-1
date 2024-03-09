@@ -1,7 +1,7 @@
 {
     "client": "Thunder Client",
     "collectionName": "ADMINISTRADOR",
-    "dateExported": "2024-03-09T02:07:38.205Z",
+    "dateExported": "2024-03-09T04:52:09.133Z",
     "version": "1.1",
     "folders": [
         {
@@ -24,6 +24,13 @@
             "containerId": "",
             "created": "2024-03-08T20:08:15.054Z",
             "sortNum": 30000
+        },
+        {
+            "_id": "67888535-f8e7-4c69-aaa6-68f50c79b7f1",
+            "name": "GestionFacturas",
+            "containerId": "",
+            "created": "2024-03-09T02:17:04.457Z",
+            "sortNum": 40000
         }
     ],
     "requests": [
@@ -114,17 +121,17 @@
             "method": "POST",
             "sortNum": 50000,
             "created": "2024-03-08T20:08:15.055Z",
-            "modified": "2024-03-09T01:23:44.510Z",
+            "modified": "2024-03-09T04:21:13.550Z",
             "headers": [
                 {
                     "name": "x-token",
-                    "value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1aWQiOiI2NWViYjVjZGU0MmVlMzZjZDJmOWU1MmMiLCJpYXQiOjE3MDk5NDY4MDcsImV4cCI6MTcwOTk1MDQwN30._Qzgrfg-FOkgZOL3JWngXcj8xF7VUL2Q05glV9_RovA"
+                    "value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1aWQiOiI2NWViZTMwYThmODY2NDY1NmQxYTZlNjMiLCJpYXQiOjE3MDk5NTc5NjYsImV4cCI6MTcwOTk2MTU2Nn0.Y1-kXGkA0rfUZm-a2TsMI7DDkDMPAhxajoXlvJLRXUA"
                 }
             ],
             "params": [],
             "body": {
                 "type": "json",
-                "raw": "{\n  \"NombreCategoria\": \"Categoria predefinida\",\n  \"Descripcion\": \"Categoria Predefinida\"\n}",
+                "raw": "{\n  \"NombreCategoria\": \"Videojuegos\",\n  \"Descripcion\": \"Categoria juegos\"\n}",
                 "form": []
             },
             "reqType": "post",
@@ -198,20 +205,35 @@
             "method": "POST",
             "sortNum": 90000,
             "created": "2024-03-08T20:08:15.061Z",
-            "modified": "2024-03-09T01:28:45.270Z",
+            "modified": "2024-03-09T04:23:15.125Z",
             "headers": [
                 {
                     "name": "x-token",
-                    "value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1aWQiOiI2NWViYjVjZGU0MmVlMzZjZDJmOWU1MmMiLCJpYXQiOjE3MDk5NDY4MDcsImV4cCI6MTcwOTk1MDQwN30._Qzgrfg-FOkgZOL3JWngXcj8xF7VUL2Q05glV9_RovA"
+                    "value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1aWQiOiI2NWViZTMwYThmODY2NDY1NmQxYTZlNjMiLCJpYXQiOjE3MDk5NTc5NjYsImV4cCI6MTcwOTk2MTU2Nn0.Y1-kXGkA0rfUZm-a2TsMI7DDkDMPAhxajoXlvJLRXUA"
                 }
             ],
             "params": [],
             "body": {
                 "type": "json",
-                "raw": "{\n  \"NombreProducto\": \"Frijoles\",\n  \"Descripcion\": \"Lata de frijol de 20kg\",\n  \"Precio\": 120.00,\n  \"Stock\": 15,\n  \"Categoria\": \"65ebb9b6fd889c47f0b17011\"\n}",
+                "raw": "{\n  \"NombreProducto\": \"Mario Kart\",\n  \"Descripcion\": \"Lata de frijol de 20kg\",\n  \"Precio\": 120.00,\n  \"Stock\": 10,\n  \"Categoria\": \"65ebe3b98f8664656d1a6e6c\"\n}",
                 "form": []
             },
             "reqType": "post",
+            "tests": []
+        },
+        {
+            "_id": "70aa5b18-23a3-49e6-b885-b191417ccd73",
+            "colId": "dffeb327-ed8d-47e9-8acc-84571e53ce77",
+            "containerId": "46988aa7-f38e-44f1-bfde-21529e3aeb06",
+            "name": "BuscarProducto",
+            "url": "localhost:3000/SalesManagement/v1/product/65ebbb4dfd889c47f0b17051",
+            "method": "GET",
+            "sortNum": 91250,
+            "created": "2024-03-08T20:08:15.063Z",
+            "modified": "2024-03-09T01:29:44.915Z",
+            "headers": [],
+            "params": [],
+            "reqType": "get",
             "tests": []
         },
         {
@@ -226,21 +248,6 @@
             "modified": "2024-03-08T20:08:15.062Z",
             "headers": [],
             "params": [],
-            "tests": []
-        },
-        {
-            "_id": "70aa5b18-23a3-49e6-b885-b191417ccd73",
-            "colId": "dffeb327-ed8d-47e9-8acc-84571e53ce77",
-            "containerId": "46988aa7-f38e-44f1-bfde-21529e3aeb06",
-            "name": "BuscarProducto",
-            "url": "localhost:3000/SalesManagement/v1/product/65ebbb4dfd889c47f0b17051",
-            "method": "GET",
-            "sortNum": 95000,
-            "created": "2024-03-08T20:08:15.063Z",
-            "modified": "2024-03-09T01:29:44.915Z",
-            "headers": [],
-            "params": [],
-            "reqType": "get",
             "tests": []
         },
         {
@@ -300,6 +307,58 @@
             ],
             "params": [],
             "reqType": "del",
+            "tests": []
+        },
+        {
+            "_id": "4a52d554-04de-4430-810c-a7dea96e8eeb",
+            "colId": "dffeb327-ed8d-47e9-8acc-84571e53ce77",
+            "containerId": "46988aa7-f38e-44f1-bfde-21529e3aeb06",
+            "name": "ProductosMasVendidos",
+            "url": "localhost:3000/SalesManagement/v1/product/mas-vendidos",
+            "method": "GET",
+            "sortNum": 140000,
+            "created": "2024-03-09T03:10:32.083Z",
+            "modified": "2024-03-09T03:10:45.203Z",
+            "headers": [],
+            "params": [],
+            "tests": []
+        },
+        {
+            "_id": "f64d3c3d-4a9f-498f-a33f-cf8365cce026",
+            "colId": "dffeb327-ed8d-47e9-8acc-84571e53ce77",
+            "containerId": "67888535-f8e7-4c69-aaa6-68f50c79b7f1",
+            "name": "VerFacturasId",
+            "url": "localhost:3000/SalesManagement/v1/receipt/facturas/65ebe4be8f8664656d1a6e7a",
+            "method": "GET",
+            "sortNum": 160000,
+            "created": "2024-03-09T03:51:33.767Z",
+            "modified": "2024-03-09T04:31:08.269Z",
+            "headers": [],
+            "params": [],
+            "tests": []
+        },
+        {
+            "_id": "19d896cb-cf67-4c7c-9f6b-6cefc5e44e16",
+            "colId": "dffeb327-ed8d-47e9-8acc-84571e53ce77",
+            "containerId": "67888535-f8e7-4c69-aaa6-68f50c79b7f1",
+            "name": "EditarFactura",
+            "url": "localhost:3000/SalesManagement/v1/receipt/factura/65ebe8b50a297cbc7cc235c1",
+            "method": "PUT",
+            "sortNum": 170000,
+            "created": "2024-03-09T04:46:09.662Z",
+            "modified": "2024-03-09T04:49:41.749Z",
+            "headers": [
+                {
+                    "name": "x-token",
+                    "value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1aWQiOiI2NWViZTRiZThmODY2NDY1NmQxYTZlN2EiLCJpYXQiOjE3MDk5NTgzMzYsImV4cCI6MTcwOTk2MTkzNn0.84CHj4ecSuKJiBpe5o7Pn6pU6HZ-z8KCYmjRjahb3QU"
+                }
+            ],
+            "params": [],
+            "body": {
+                "type": "json",
+                "raw": "{\r\n  \"Direccion\": \"Nueva dirección\",\r\n  \"MetodoPago\": \"Nuevo método de pago\"\r\n}",
+                "form": []
+            },
             "tests": []
         }
     ]

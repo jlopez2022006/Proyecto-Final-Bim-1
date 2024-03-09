@@ -41,6 +41,13 @@ export const agregarProductoAlCarrito = async (req, res) => {
             return res.status(404).json({ msg: 'Producto no encontrado.' });
         }
 
+        // Verificar si hay suficiente stock del producto
+        if (productoAgregado.Stock <= 0) {
+            return res.status(400).json({ msg: 'No hay suficiente stock disponible para este producto.' });
+        }
+
+        console.log('Stock antes de la actualización:', productoAgregado.Stock);
+
         // Agregar el producto al carrito del usuario
         usuario.carrito.push({
             productoId: productoAgregado._id,
@@ -48,7 +55,15 @@ export const agregarProductoAlCarrito = async (req, res) => {
             descripcion: productoAgregado.Descripcion,
             precio: productoAgregado.Precio
         });
+        
+        // Restar una unidad al stock del producto
+        productoAgregado.Stock -= 1;
+
+        // Guardar los cambios en la base de datos
         await usuario.save();
+        await productoAgregado.save();
+
+        console.log('Stock después de la actualización:', productoAgregado.Stock);
 
         res.status(201).json({ msg: 'Producto agregado al carrito correctamente.', usuario });
     } catch (error) {

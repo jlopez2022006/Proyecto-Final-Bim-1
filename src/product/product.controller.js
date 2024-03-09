@@ -18,6 +18,7 @@ export const productosGet = async (req, res) => {
     }
 };
 
+
 export const obtenerProductosPorCategoria = async (req, res) => {
     try {
         const { NombreCategoria } = req.body;
